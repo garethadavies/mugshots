@@ -166,4 +166,16 @@ h1 {
 	font-weight: 400;
 	font-size: 7.6rem;
 	color: #6A4729;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h2 {
+	color: #6A4729;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.9rem;
+	width: 100%;
+	text-align: right;
+	margin-top: -20px;
 }
