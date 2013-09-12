@@ -1,0 +1,169 @@
+/*------------------------------------*\
+  $$ Mugshots
+\*------------------------------------*/
+
+/*
+ * CONTENTS
+ * Global Reset & Standards
+ */
+
+
+
+
+/*------------------------------------*\
+  $ Global Reset & Standards
+\*------------------------------------*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Scaffolding
+\*------------------------------------*/
+
+body {
+	background: #E0C598;
+}
+
+.page-header {
+	/*background-color: #E0C598;*/
+	/* This stops the content's margin from overflowing */
+	position: relative;
+	overflow: hidden;
+}
+
+.inner-wrapper {
+	margin: 0 auto;
+  max-width: 800px;
+}
+
+
+
+
+
+.content-header {
+	min-height: 60px;
+	/*background-color: #ddd;*/
+}
+
+
+
+
+.item {
+	min-height: 60px;
+	background-color: #fff;
+	/*border: 1px solid #6A472B;*/
+	border-bottom: 1px solid #6A4729;
+	border-radius: 3px;
+	margin: 10px;
+}
+
+.item img {
+	/*border: 1px solid #eee;*/
+	width: 100%;
+	height: 100%;
+}
+
+.item ul {
+	padding: 0 10px;
+}
+
+.item header {
+	padding: 10px;
+	border-bottom: 1px solid #F4E8D5;
+	background-color: #6A4729;
+	color: #F4E8D5;
+	border-radius: 3px;
+}
+
+.item footer {
+	padding: 10px;
+	/*border-top: 1px solid #F4E8D5;*/
+}
+
+.item footer a {
+	color: #333;
+	text-decoration: none;
+}
+
+
+
+
+.no-styling-list {
+	margin: 0;
+	padding: 0;
+}
+
+.no-styling-list li {
+	list-style: none;
+	line-height: 1.6rem;
+}
+
+
+
+
+.bold {
+	font-weight: 800;
+}
+
+li span.bold {
+	color: #6A4729;
+}
+
+
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Helper classes
+\*------------------------------------*/
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.padding {
+	padding: 10px;
+}
+
+
+
+
+.light-gray-background {
+	background-color: #f9f9f9;
+}
+
+
+
+
+h1 {
+	font-family: 'Londrina Solid', cursive;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 7.6rem;
+	color: #6A4729;
+}
