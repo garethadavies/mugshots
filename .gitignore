@@ -16,3 +16,7 @@
 
 # Folders
 vendor/assets/components
+node_modules/
+
+# File types
+*.orig
