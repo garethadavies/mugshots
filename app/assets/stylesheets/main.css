@@ -80,7 +80,7 @@ Items
 
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 3px;
-  margin: 0 0 20px 0;
+  margin: 0 0 24px 0;
 }
 .item img {
   /*border: @defaultBorderWidth @defaultBorderStyle #eee;*/
@@ -92,25 +92,13 @@ Items
   $ Mugshots
 \*------------------------------------*/
 .mugshot ul {
-  margin: 10px 0;
+  margin: 12px 0;
 }
 .mugshot header {
-  padding: 10px;
+  padding: 12px;
   background-color: #184048;
   color: #ffffff;
   border-radius: 3px;
-}
-.mugshot footer {
-  padding: 10px;
-  border-top: 1px solid #eeeeee;
-  text-align: right;
-  background-color: #f9f9f9;
-  border-radius: 0 0 3px 3px;
-}
-.mugshot footer button {
-  border-left: 1px solid #dddddd;
-  border-top: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
 }
 /*------------------------------------*\
   $ Lists
@@ -153,16 +141,22 @@ li span.bold {
   float: right;
 }
 .padding {
-  padding: 10px;
+  padding: 12px;
+}
+.extra-padding {
+  padding: 18px;
 }
 .padding-left {
-  padding-left: 10px;
+  padding-left: 12px;
 }
 .margin {
-  margin: 10px;
+  margin: 12px;
 }
 .margin-left {
-  margin-left: 10px;
+  margin-left: 12px;
+}
+.margin-right {
+  margin-left: 12px;
 }
 .no-margin {
   margin: 0;
@@ -217,11 +211,26 @@ h2 {
   $ Menu Bar
 \*------------------------------------*/
 .menu-bar {
-  margin: 0 0 20px 0;
+  margin: 0 0 24px 0;
 }
 .menu-bar p {
   margin: 0;
   line-height: 2.3rem;
+}
+/*------------------------------------*\
+  $ Forms
+\*------------------------------------*/
+.form-footer {
+  padding: 10px;
+  border-top: 1px solid #eeeeee;
+  text-align: right;
+  background-color: #f9f9f9;
+  border-radius: 0 0 3px 3px;
+}
+.form-footer button {
+  border-left: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
 }
 /*
 .item {

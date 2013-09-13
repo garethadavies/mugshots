@@ -30,8 +30,8 @@
 Padding
 */
 
-@defaultPadding: 10px;
-@defaultMargin: 10px;
+@defaultPadding: 12px;
+@defaultMargin: 12px;
 
 /*
 Colours
@@ -170,20 +170,6 @@ Items
 	border-radius: @defaultBorderRadius;
 }
 
-.mugshot footer {
-	padding: 10px;
-	border-top: @defaultBorderWidth @defaultBorderStyle @grayLightest;
-	text-align: right;
-	background-color: @grayFaint;
-	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius; 
-}
-
-.mugshot footer button {
-	border-left: @defaultBorderWidth @defaultBorderStyle @grayLighter;
-	border-top: @defaultBorderWidth @defaultBorderStyle @grayLighter;
-	border-right: @defaultBorderWidth @defaultBorderStyle @grayLighter;
-}
-
 
 
 
@@ -252,6 +238,10 @@ li span.bold {
 	padding: @defaultPadding;
 }
 
+.extra-padding {
+	padding: @defaultPadding*1.5;
+}
+
 .padding-left {
 	padding-left: @defaultPadding;
 }
@@ -261,6 +251,10 @@ li span.bold {
 }
 
 .margin-left {
+	margin-left: @defaultMargin;
+}
+
+.margin-right {
 	margin-left: @defaultMargin;
 }
 
@@ -343,6 +337,28 @@ h2 {
 	margin: 0;
 	line-height: 2.3rem;
 }
+
+
+
+
+/*------------------------------------*\
+  $ Forms
+\*------------------------------------*/
+
+.form-footer {
+	padding: 10px;
+	border-top: @defaultBorderWidth @defaultBorderStyle @grayLightest;
+	text-align: right;
+	background-color: @grayFaint;
+	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius; 
+}
+
+.form-footer button {
+	border-left: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+	border-top: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+	border-right: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+}
+
 
 
 
