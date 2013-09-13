@@ -71,8 +71,10 @@ body {
 /*------------------------------------*\
   $ Components
 \*------------------------------------*/
+/*
+Items
+*/
 .item {
-  min-height: 60px;
   background-color: #ffffff;
   /*border: @defaultBorderWidth @defaultBorderStyle #6A472B;*/
 
@@ -86,27 +88,24 @@ body {
   width: 100%;
   height: 100%;
 }
-.item ul {
+/*------------------------------------*\
+  $ Mugshots
+\*------------------------------------*/
+.mugshot ul {
   margin: 10px 0;
 }
-.item header {
+.mugshot header {
   padding: 10px;
-  /*border-bottom: @defaultBorderWidth @defaultBorderStyle #F4E8D5;*/
-
   background-color: #184048;
   color: #ffffff;
   border-radius: 3px;
 }
-.item footer {
+.mugshot footer {
   padding: 10px;
   border-top: 1px solid #eeeeee;
   text-align: right;
   background-color: #f9f9f9;
   border-radius: 0 0 3px 3px;
-}
-.item footer button {
-  text-decoration: none;
-  background-color: #ffffff;
 }
 /*------------------------------------*\
   $ Lists
@@ -154,6 +153,15 @@ li span.bold {
 .padding-left {
   padding-left: 10px;
 }
+.margin {
+  margin: 10px;
+}
+.margin-left {
+  margin-left: 10px;
+}
+.no-margin {
+  margin: 0;
+}
 /*------------------------------------*\
   $ Headers
 \*------------------------------------*/
@@ -182,6 +190,7 @@ h2 {
   $ Buttons
 \*------------------------------------*/
 .pure-button-custom {
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 3px;
@@ -193,10 +202,16 @@ h2 {
 }
 .button-login {
   border-radius: 0 0 3px 3px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   right: 0;
+}
+/*------------------------------------*\
+  $ Menu Bar
+\*------------------------------------*/
+.menu-bar p {
+  margin: 0;
+  line-height: 2.3rem;
 }
 /*
 .item {

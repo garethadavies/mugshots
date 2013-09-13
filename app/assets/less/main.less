@@ -134,8 +134,11 @@ body {
   $ Components
 \*------------------------------------*/
 
+/*
+Items
+*/
+
 .item {
-	min-height: 60px;
 	background-color: @white;
 	/*border: @defaultBorderWidth @defaultBorderStyle #6A472B;*/
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
@@ -149,30 +152,30 @@ body {
 	height: 100%;
 }
 
-.item ul {
+
+
+
+/*------------------------------------*\
+  $ Mugshots
+\*------------------------------------*/
+
+.mugshot ul {
 	margin: @defaultMargin 0;
 }
 
-.item header {
+.mugshot header {
 	padding: @defaultPadding;
-	/*border-bottom: @defaultBorderWidth @defaultBorderStyle #F4E8D5;*/
 	background-color: @darkBlue;
 	color: @white;
 	border-radius: @defaultBorderRadius;
 }
 
-.item footer {
+.mugshot footer {
 	padding: 10px;
 	border-top: @defaultBorderWidth @defaultBorderStyle @grayLightest;
 	text-align: right;
 	background-color: @grayFaint;
 	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius; 
-}
-
-.item footer button {
-	text-decoration: none;
-	background-color: @white;
-	// color: @white;
 }
 
 
@@ -240,11 +243,23 @@ li span.bold {
 }
 
 .padding {
-	padding: 10px;
+	padding: @defaultPadding;
 }
 
 .padding-left {
-	padding-left: 10px;
+	padding-left: @defaultPadding;
+}
+
+.margin {
+	margin: @defaultMargin;
+}
+
+.margin-left {
+	margin-left: @defaultMargin;
+}
+
+.no-margin {
+	margin: 0;
 }
 
 
@@ -283,6 +298,7 @@ h2 {
 \*------------------------------------*/
 
 .pure-button-custom {
+	background-color: @white;
 	border: @defaultBorderWidth @defaultBorderStyle #ddd;
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
 	border-radius: @defaultBorderRadius;
@@ -296,10 +312,22 @@ h2 {
 
 .button-login {
 	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius;
-	box-shadow: 0 1px 2px @bottomBorderColor;
+	// box-shadow: 0 1px 2px @bottomBorderColor;
 	position: absolute;
 	top: 0; 
 	right: 0;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Menu Bar
+\*------------------------------------*/
+
+.menu-bar p {
+	margin: 0;
+	line-height: 2.3rem;
 }
 
 
