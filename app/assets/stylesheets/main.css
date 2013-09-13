@@ -107,6 +107,11 @@ Items
   background-color: #f9f9f9;
   border-radius: 0 0 3px 3px;
 }
+.mugshot footer button {
+  border-left: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
 /*------------------------------------*\
   $ Lists
 \*------------------------------------*/
@@ -190,10 +195,12 @@ h2 {
   $ Buttons
 \*------------------------------------*/
 .pure-button-custom {
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 3px;
+}
+.pure-button-custom:hover {
+  background: #ffffff;
 }
 .pure-button-custom-blue {
   background-color: #184048;
@@ -209,6 +216,9 @@ h2 {
 /*------------------------------------*\
   $ Menu Bar
 \*------------------------------------*/
+.menu-bar {
+  margin: 0 0 20px 0;
+}
 .menu-bar p {
   margin: 0;
   line-height: 2.3rem;

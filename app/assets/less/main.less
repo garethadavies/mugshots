@@ -178,6 +178,12 @@ Items
 	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius; 
 }
 
+.mugshot footer button {
+	border-left: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+	border-top: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+	border-right: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+}
+
 
 
 
@@ -298,10 +304,14 @@ h2 {
 \*------------------------------------*/
 
 .pure-button-custom {
-	background-color: @white;
-	border: @defaultBorderWidth @defaultBorderStyle #ddd;
+	background: linear-gradient(to bottom, @white, @grayFaint);
+	// border: @defaultBorderWidth @defaultBorderStyle @gray;
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
 	border-radius: @defaultBorderRadius;
+}
+
+.pure-button-custom:hover {
+	background: @white;
 }
 
 .pure-button-custom-blue {
@@ -324,6 +334,10 @@ h2 {
 /*------------------------------------*\
   $ Menu Bar
 \*------------------------------------*/
+
+.menu-bar {
+	margin: 0 0 @defaultMargin*2 0;
+}
 
 .menu-bar p {
 	margin: 0;
