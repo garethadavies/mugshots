@@ -1,82 +1,213 @@
+@import 'fontello.css';
 /*------------------------------------*\
   $$ Mugshots
+  Author: Gareth Davies @garethadavies
 \*------------------------------------*/
-
 /*
  * CONTENTS
+ * Imports
  * Global Reset & Standards
+ * Variables
  */
-
-
-
-
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Variables
+\*------------------------------------*/
+/*
+Padding
+*/
+/*
+Colours
+*/
+/*
+Borders
+*/
+/*
+Fonts
+*/
 /*------------------------------------*\
   $ Global Reset & Standards
 \*------------------------------------*/
-
-@import 'fontello.css';
-
-
-
-
-/*------------------------------------*\
-  $ Global Reset & Standards
-\*------------------------------------*/
-
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-
-
-
 /*------------------------------------*\
   $ Scaffolding
 \*------------------------------------*/
-
 body {
-	background: #E0C598;
-}
+  background: #aedbe4;
+  /* #E0C598 */
 
+}
 .page-header {
-	/*background-color: #E0C598;*/
-	/* This stops the content's margin from overflowing */
-	position: relative;
-	overflow: hidden;
+  overflow: hidden;
 }
+.inner-page-header {
+  margin: 0 auto;
+  position: relative;
+  /* Bring the mug image in line with the inner-wrapper */
 
-.inner-wrapper {
-	margin: 0 auto;
+  left: -30px;
   max-width: 800px;
 }
-
-
-
-
-
-.content-header {
-	min-height: 60px;
-	/*background-color: #ddd;*/
+.inner-wrapper {
+  margin: 0 auto;
+  max-width: 730px;
 }
+/*------------------------------------*\
+  $ Headers
+\*------------------------------------*/
+.content-header {
+  min-height: 60px;
+  /*background-color: #ddd;*/
 
+}
+/*------------------------------------*\
+  $ Components
+\*------------------------------------*/
+.item {
+  min-height: 60px;
+  background-color: #ffffff;
+  /*border: @defaultBorderWidth @defaultBorderStyle #6A472B;*/
 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  margin: 0 0 20px 0;
+}
+.item img {
+  /*border: @defaultBorderWidth @defaultBorderStyle #eee;*/
 
+  width: 100%;
+  height: 100%;
+}
+.item ul {
+  margin: 10px 0;
+}
+.item header {
+  padding: 10px;
+  /*border-bottom: @defaultBorderWidth @defaultBorderStyle #F4E8D5;*/
 
+  background-color: #184048;
+  color: #ffffff;
+  border-radius: 3px;
+}
+.item footer {
+  padding: 10px;
+  border-top: 1px solid #eeeeee;
+  text-align: right;
+  background-color: #f9f9f9;
+  border-radius: 0 0 3px 3px;
+}
+.item footer button {
+  text-decoration: none;
+  background-color: #ffffff;
+}
+/*------------------------------------*\
+  $ Lists
+\*------------------------------------*/
+.no-styling-list {
+  margin: 0;
+  padding: 0;
+}
+.no-styling-list li {
+  list-style: none;
+  line-height: 1.6rem;
+}
+/*------------------------------------*\
+  $ Text
+\*------------------------------------*/
+.bold {
+  font-weight: 800;
+}
+li span.bold {
+  color: #184048;
+}
+/*------------------------------------*\
+  $ Clearfix
+\*------------------------------------*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*------------------------------------*\
+  $ Helper classes
+\*------------------------------------*/
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.padding {
+  padding: 10px;
+}
+.padding-left {
+  padding-left: 10px;
+}
+/*------------------------------------*\
+  $ Headers
+\*------------------------------------*/
+h1 {
+  font-family: 'Londrina Solid', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7.6rem;
+  color: #ffffff;
+  /* #6A4729 */
+
+  margin: 6rem 0 0 0;
+  padding-bottom: 0;
+  text-shadow: 1px 2px 2px #184048;
+}
+h2 {
+  color: #184048;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: right;
+  margin-top: -20px;
+}
+/*------------------------------------*\
+  $ Buttons
+\*------------------------------------*/
+.pure-button-custom {
+  border: 1px solid #dddddd;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+.pure-button-custom-blue {
+  background-color: #184048;
+  color: #ffffff;
+  border: none;
+}
+.button-login {
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*
 .item {
 	min-height: 60px;
-	background-color: #fff;
-	/*border: 1px solid #6A472B;*/
-	border-bottom: 1px solid #6A4729;
-	border-radius: 3px;
+	background-color: @white;
+	border-bottom: @defaultBorderWidth @defaultBorderStyle #6A4729;
+	border-radius: @defaultBorderRadius;
 	margin: 20px;
 }
 
 .item img {
-	/*border: 1px solid #eee;*/
 	width: 100%;
 	height: 100%;
 }
@@ -87,15 +218,14 @@ body {
 
 .item header {
 	padding: 10px;
-	/*border-bottom: 1px solid #F4E8D5;*/
 	background-color: #6A4729;
 	color: #F4E8D5;
-	border-radius: 3px;
+	border-radius: @defaultBorderRadius;
 }
 
 .item footer {
 	padding: 10px;
-	border-top: 1px solid #ccc;
+	border-top: @defaultBorderWidth @defaultBorderStyle #ccc;
 	background-color: #f9f9f9;
 }
 
@@ -103,89 +233,4 @@ body {
 	color: #333;
 	text-decoration: none;
 }
-
-
-
-
-.no-styling-list {
-	margin: 0;
-	padding: 0;
-}
-
-.no-styling-list li {
-	list-style: none;
-	line-height: 1.6rem;
-}
-
-
-
-
-.bold {
-	font-weight: 800;
-}
-
-li span.bold {
-	color: #6A4729;
-}
-
-
-
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-
-
-
-/*------------------------------------*\
-  $ Helper classes
-\*------------------------------------*/
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
-.padding {
-	padding: 10px;
-}
-
-
-
-
-.light-gray-background {
-	background-color: #f9f9f9;
-}
-
-
-
-
-h1 {
-	font-family: 'Londrina Solid', cursive;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 7.6rem;
-	color: #6A4729;
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-h2 {
-	color: #6A4729;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 0.9rem;
-	width: 100%;
-	text-align: right;
-	margin-top: -20px;
-}
+*/

@@ -1,0 +1,343 @@
+/*------------------------------------*\
+  $$ Mugshots
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+
+/*
+ * CONTENTS
+ * Imports
+ * Global Reset & Standards
+ * Variables
+ */
+
+
+
+
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+
+@import 'fontello.css';
+
+
+
+
+/*------------------------------------*\
+  $ Variables
+\*------------------------------------*/
+
+/*
+Padding
+*/
+
+@defaultPadding: 10px;
+@defaultMargin: 10px;
+
+/*
+Colours
+*/
+
+// Black & White
+@black: #000;
+@grayDarkest: #111;
+@grayDarker: #333;
+@grayDark: #666;
+@gray: #999;
+@grayLight: #ccc;
+@grayLighter: #ddd;
+@grayLightest: #eee;
+@grayFaint: #F9F9F9;
+@white: #fff;
+
+// Blues
+@lightBlue: #AEDBE4;
+@midBlue: darken(@lightBlue, 30%);
+@darkBlue: darken(@lightBlue, 60%);
+
+// Borders
+@bottomBorderColor: rgba(0,0,0,0.4);
+
+/*
+Borders
+*/
+
+@defaultBorderRadius: 3px;
+@defaultBorderWidth: 1px;
+@defaultBorderStyle: solid;
+@defaultBorderColor: #ddd;
+
+/*
+Fonts
+*/
+
+@fancyFont: 'Londrina Solid', cursive;
+
+
+
+
+/*------------------------------------*\
+  $ Global Reset & Standards
+\*------------------------------------*/
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Scaffolding
+\*------------------------------------*/
+
+body {
+	background: @lightBlue; /* #E0C598 */
+}
+
+.page-header {
+	overflow: hidden;
+}
+
+.inner-page-header {
+	margin: 0 auto;
+	position: relative;
+	/* Bring the mug image in line with the inner-wrapper */
+	left: -30px;
+  max-width: 800px;
+}
+
+.inner-wrapper {
+	margin: 0 auto;
+  max-width: 730px;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Headers
+\*------------------------------------*/
+
+.content-header {
+	min-height: 60px;
+	/*background-color: #ddd;*/
+}
+
+
+
+
+/*------------------------------------*\
+  $ Components
+\*------------------------------------*/
+
+.item {
+	min-height: 60px;
+	background-color: @white;
+	/*border: @defaultBorderWidth @defaultBorderStyle #6A472B;*/
+	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
+	border-radius: @defaultBorderRadius;
+	margin: 0 0 @defaultMargin*2 0;
+}
+
+.item img {
+	/*border: @defaultBorderWidth @defaultBorderStyle #eee;*/
+	width: 100%;
+	height: 100%;
+}
+
+.item ul {
+	margin: @defaultMargin 0;
+}
+
+.item header {
+	padding: @defaultPadding;
+	/*border-bottom: @defaultBorderWidth @defaultBorderStyle #F4E8D5;*/
+	background-color: @darkBlue;
+	color: @white;
+	border-radius: @defaultBorderRadius;
+}
+
+.item footer {
+	padding: 10px;
+	border-top: @defaultBorderWidth @defaultBorderStyle @grayLightest;
+	text-align: right;
+	background-color: @grayFaint;
+	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius; 
+}
+
+.item footer button {
+	text-decoration: none;
+	background-color: @white;
+	// color: @white;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Lists
+\*------------------------------------*/
+
+.no-styling-list {
+	margin: 0;
+	padding: 0;
+}
+
+.no-styling-list li {
+	list-style: none;
+	line-height: 1.6rem;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Text
+\*------------------------------------*/
+
+.bold {
+	font-weight: 800;
+}
+
+li span.bold {
+	color: @darkBlue;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Clearfix
+\*------------------------------------*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Helper classes
+\*------------------------------------*/
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.padding {
+	padding: 10px;
+}
+
+.padding-left {
+	padding-left: 10px;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Headers
+\*------------------------------------*/
+
+h1 {
+	font-family: @fancyFont;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 7.6rem;
+	color: @white; /* #6A4729 */
+	margin: 6rem 0 0 0;
+	padding-bottom: 0;
+	text-shadow: 1px 2px 2px @darkBlue;
+}
+
+h2 {
+	color: @darkBlue;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 0.9rem;
+	width: 100%;
+	text-align: right;
+	margin-top: -20px;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Buttons
+\*------------------------------------*/
+
+.pure-button-custom {
+	border: @defaultBorderWidth @defaultBorderStyle #ddd;
+	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
+	border-radius: @defaultBorderRadius;
+}
+
+.pure-button-custom-blue {
+	background-color: @darkBlue;
+	color: @white;
+	border: none;
+}
+
+.button-login {
+	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius;
+	box-shadow: 0 1px 2px @bottomBorderColor;
+	position: absolute;
+	top: 0; 
+	right: 0;
+}
+
+
+
+
+/*
+.item {
+	min-height: 60px;
+	background-color: @white;
+	border-bottom: @defaultBorderWidth @defaultBorderStyle #6A4729;
+	border-radius: @defaultBorderRadius;
+	margin: 20px;
+}
+
+.item img {
+	width: 100%;
+	height: 100%;
+}
+
+.item ul {
+	padding: 0 10px;
+}
+
+.item header {
+	padding: 10px;
+	background-color: #6A4729;
+	color: #F4E8D5;
+	border-radius: @defaultBorderRadius;
+}
+
+.item footer {
+	padding: 10px;
+	border-top: @defaultBorderWidth @defaultBorderStyle #ccc;
+	background-color: #f9f9f9;
+}
+
+.item footer a {
+	color: #333;
+	text-decoration: none;
+}
+*/
