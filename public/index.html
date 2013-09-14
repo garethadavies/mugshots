@@ -64,30 +64,62 @@
 
     <section class="item">
 
-      <header class="extra-padding">
-
-        <h3 class="no-margin">Add a person</h3>
-
-      </header>
-
       <form class="pure-form pure-form-stacked">
 
-        <div class="pure-g padding">
+        <div class="pure-g extra-padding">
 
-          <div class="pure-u-1-2 margin-right">
+          <div class="pure-u-1-2 padding-right">
 
             <fieldset class="pure-group">
               
               <legend>Personal Details</legend>
 
               <label for="email">First name</label>
-              <input id="email" class="pure-input-1" type="email" placeholder="Email">
+              <input id="email" class="pure-input-1" type="email" placeholder="First name">
 
               <label for="email">Surname</label>
-              <input id="email" class="pure-input-1" type="email" placeholder="Email">
+              <input id="email" class="pure-input-1" type="email" placeholder="Surname">
 
               <label for="email">Email Address</label>
-              <input id="email" class="pure-input-1" type="email" placeholder="Email">
+              <input id="email" class="pure-input-1" type="email" placeholder="Email Address">
+            
+            </fieldset>
+
+          </div>
+
+          <div class="pure-u-1-2 padding-left">
+
+            <fieldset class="pure-group">
+              
+              <legend>Drink Preferences</legend>
+
+              <label for="form-drink">Drink of choice</label>
+              <select name="drink" id="form-drink" class="pure-input-1">
+                <option value="1">Tea</option>
+                <option value="2">Coffee</option>
+                <option value="3">Water</option>
+              </select>
+
+              <label for="email">Number of sugars</label>
+              <select name="drink" id="form-drink" class="pure-input-1">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+
+              <label for="email">Milk type</label>
+              <select name="drink" id="form-drink" class="pure-input-1">
+                <option value="0">Full-fat</option>
+                <option value="1">Semi-skimmed</option>
+                <option value="2">Skimmed</option>
+                <option value="3">1%</option>
+              </select>
+
+              <label for="email">Other preferences</label>
+              <textarea name="" id="" cols="30" rows="6" class="pure-input-1"></textarea>
             
             </fieldset>
 
@@ -95,11 +127,13 @@
 
         </div>
 
-        <footer class="form-footer">
+        <div class="form-footer">
+
+          <button type="clear" class="pure-button pure-button-custom">Clear</button>
 
           <button type="submit" class="pure-button pure-button-custom">Submit</button>
 
-        </footer>
+        </div>
 
       </form>
 
