@@ -21,3 +21,5 @@ node_modules/
 # File types
 *.orig
 *.DS_Store
+
+.env
