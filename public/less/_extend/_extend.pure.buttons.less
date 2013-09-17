@@ -1,0 +1,52 @@
+/*------------------------------------*\
+  $$ Extend Pure Buttons
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+
+/*
+ * CONTENTS
+ * Imports
+ * Global Reset & Standards
+ * Variables
+ */
+
+
+
+
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+
+@import '../_variables.less'; 
+
+
+
+
+/*------------------------------------*\
+  $ Buttons
+\*------------------------------------*/
+
+.pure-button-custom {
+	background: @white;
+	background: linear-gradient(to bottom, @white, @grayFaint);
+	// border: @defaultBorderWidth @defaultBorderStyle @gray;
+	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
+	border-radius: @defaultBorderRadius;
+}
+
+.pure-button-custom:hover {
+	background: @white;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Submit Button
+\*------------------------------------*/
+
+button[type="submit"],
+button[type="submit"]:hover {
+	background: @darkBlue;
+	color: @white;
+}

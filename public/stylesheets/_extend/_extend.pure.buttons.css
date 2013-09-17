@@ -1,0 +1,56 @@
+/*------------------------------------*\
+  $$ Extend Pure Buttons
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+/*
+ * CONTENTS
+ * Imports
+ * Global Reset & Standards
+ * Variables
+ */
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  $$ Mugshots - Variables
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+/*
+ * CONTENTS
+ * Padding
+ * Colours
+ * Borders
+ * Fonts
+ */
+/*------------------------------------*\
+  $ Padding
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Colours
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Borders
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Fonts
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Buttons
+\*------------------------------------*/
+.pure-button-custom {
+  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}
+.pure-button-custom:hover {
+  background: #ffffff;
+}
+/*------------------------------------*\
+  $ Submit Button
+\*------------------------------------*/
+button[type="submit"],
+button[type="submit"]:hover {
+  background: #184048;
+  color: #ffffff;
+}
