@@ -43,7 +43,6 @@
 
 body {
 	background: @lightBlue; /* #E0C598 */
-	padding: 0 @defaultPadding*2;
 }
 
 .page-header {
@@ -54,13 +53,21 @@ body {
 	margin: 0 auto;
 	position: relative;
 	/* Bring the mug image in line with the inner-wrapper */
-	left: -30px;
+	// left: -30px;
+	left: -10px;
   max-width: 800px;
 }
 
 .inner-wrapper {
+	padding: 0 @defaultPadding*1.5;
 	margin: 0 auto;
   max-width: 730px;
+}
+
+// Images
+
+img {
+	width: 100%;
 }
 
 
@@ -92,12 +99,6 @@ Items
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
 	border-radius: @defaultBorderRadius;
 	margin: 0 0 @defaultMargin*2 0;
-}
-
-.item img {
-	/*border: @defaultBorderWidth @defaultBorderStyle #eee;*/
-	width: 100%;
-	margin-right: @defaultMargin;
 }
 
 
@@ -226,14 +227,17 @@ h1 {
 	font-family: @fancyFont;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 7.6rem;
+	// font-size: 7.6rem;
+	font-size: 2.8rem;
 	color: @white; /* #6A4729 */
-	margin: 6rem 0 0 0;
+	// margin: 6rem 0 0 0;
 	padding-bottom: 0;
-	text-shadow: 1px 2px 2px @darkBlue;
+	// text-shadow: 1px 2px 2px @darkBlue;
+	text-shadow: 1px 1px 2px @darkBlue;
 }
 
 h2 {
+	display: none;
 	color: @darkBlue;
 	font-style: normal;
 	font-weight: 400;
@@ -267,7 +271,7 @@ h2 {
 \*------------------------------------*/
 
 .form-footer {
-	padding: 10px;
+	padding: @defaultPadding @defaultPadding*1.5;
 	border-top: @defaultBorderWidth @defaultBorderStyle @grayLightest;
 	text-align: right;
 	background-color: @grayFaint;

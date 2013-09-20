@@ -51,7 +51,6 @@ body {
   background: #aedbe4;
   /* #E0C598 */
 
-  padding: 0 24px;
 }
 .page-header {
   overflow: hidden;
@@ -61,12 +60,16 @@ body {
   position: relative;
   /* Bring the mug image in line with the inner-wrapper */
 
-  left: -30px;
+  left: -10px;
   max-width: 800px;
 }
 .inner-wrapper {
+  padding: 0 18px;
   margin: 0 auto;
   max-width: 730px;
+}
+img {
+  width: 100%;
 }
 /*------------------------------------*\
   $ Headers
@@ -89,12 +92,6 @@ Items
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 3px;
   margin: 0 0 24px 0;
-}
-.item img {
-  /*border: @defaultBorderWidth @defaultBorderStyle #eee;*/
-
-  width: 100%;
-  margin-right: 12px;
 }
 /*------------------------------------*\
   $ Mugshots
@@ -180,15 +177,15 @@ h1 {
   font-family: 'Londrina Solid', cursive;
   font-style: normal;
   font-weight: 400;
-  font-size: 7.6rem;
+  font-size: 2.8rem;
   color: #ffffff;
   /* #6A4729 */
 
-  margin: 6rem 0 0 0;
   padding-bottom: 0;
-  text-shadow: 1px 2px 2px #1e3e4f;
+  text-shadow: 1px 1px 2px #1e3e4f;
 }
 h2 {
+  display: none;
   color: #1e3e4f;
   font-style: normal;
   font-weight: 400;
@@ -211,7 +208,7 @@ h2 {
   $ Forms
 \*------------------------------------*/
 .form-footer {
-  padding: 10px;
+  padding: 12px 18px;
   border-top: 1px solid #eeeeee;
   text-align: right;
   background-color: #f9f9f9;
