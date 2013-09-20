@@ -43,6 +43,7 @@
 
 body {
 	background: @lightBlue; /* #E0C598 */
+	padding: 0 @defaultPadding*2;
 }
 
 .page-header {
@@ -96,6 +97,7 @@ Items
 .item img {
 	/*border: @defaultBorderWidth @defaultBorderStyle #eee;*/
 	width: 100%;
+	margin-right: @defaultMargin;
 }
 
 
@@ -105,15 +107,12 @@ Items
   $ Mugshots
 \*------------------------------------*/
 
-.mugshot ul {
-	margin: @defaultMargin 0;
-}
-
 .mugshot header {
 	padding: @defaultPadding;
 	background-color: @darkBlue;
 	color: @white;
 	border-radius: @defaultBorderRadius;
+	margin-bottom: @defaultMargin;
 }
 
 
@@ -275,6 +274,10 @@ h2 {
 	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius; 
 }
 
+.form-footer button {
+	margin: 0 !important;
+}
+
 .form-footer button[type="clear"],
 .form-footer button[type="button"] {
 	border-left: @defaultBorderWidth @defaultBorderStyle @grayLighter;
@@ -285,40 +288,19 @@ h2 {
 
 
 
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
 
-/*
-.item {
-	min-height: 60px;
-	background-color: @white;
-	border-bottom: @defaultBorderWidth @defaultBorderStyle #6A4729;
-	border-radius: @defaultBorderRadius;
-	margin: 20px;
-}
+@media (max-width: 767px) {
 
-.item img {
-	width: 100%;
-	height: 100%;
-}
+	/*------------------------------------*\
+	  $ Helper classes
+	\*------------------------------------*/
 
-.item ul {
-	padding: 0 10px;
-}
+	.right,
+	.left {
+		float: none;
+	}
 
-.item header {
-	padding: 10px;
-	background-color: #6A4729;
-	color: #F4E8D5;
-	border-radius: @defaultBorderRadius;
 }
-
-.item footer {
-	padding: 10px;
-	border-top: @defaultBorderWidth @defaultBorderStyle #ccc;
-	background-color: #f9f9f9;
-}
-
-.item footer a {
-	color: #333;
-	text-decoration: none;
-}
-*/

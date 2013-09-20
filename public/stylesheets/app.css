@@ -51,6 +51,7 @@ body {
   background: #aedbe4;
   /* #E0C598 */
 
+  padding: 0 24px;
 }
 .page-header {
   overflow: hidden;
@@ -93,18 +94,17 @@ Items
   /*border: @defaultBorderWidth @defaultBorderStyle #eee;*/
 
   width: 100%;
+  margin-right: 12px;
 }
 /*------------------------------------*\
   $ Mugshots
 \*------------------------------------*/
-.mugshot ul {
-  margin: 12px 0;
-}
 .mugshot header {
   padding: 12px;
   background-color: #1e3e4f;
   color: #ffffff;
   border-radius: 3px;
+  margin-bottom: 12px;
 }
 /*------------------------------------*\
   $ Lists
@@ -217,45 +217,24 @@ h2 {
   background-color: #f9f9f9;
   border-radius: 0 0 3px 3px;
 }
+.form-footer button {
+  margin: 0 !important;
+}
 .form-footer button[type="clear"],
 .form-footer button[type="button"] {
   border-left: 1px solid #dddddd;
   border-top: 1px solid #dddddd;
   border-right: 1px solid #dddddd;
 }
-/*
-.item {
-	min-height: 60px;
-	background-color: @white;
-	border-bottom: @defaultBorderWidth @defaultBorderStyle #6A4729;
-	border-radius: @defaultBorderRadius;
-	margin: 20px;
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+@media (max-width: 767px) {
+  /*------------------------------------*\
+  	  $ Helper classes
+  	\*------------------------------------*/
+  .right,
+  .left {
+    float: none;
+  }
 }
-
-.item img {
-	width: 100%;
-	height: 100%;
-}
-
-.item ul {
-	padding: 0 10px;
-}
-
-.item header {
-	padding: 10px;
-	background-color: #6A4729;
-	color: #F4E8D5;
-	border-radius: @defaultBorderRadius;
-}
-
-.item footer {
-	padding: 10px;
-	border-top: @defaultBorderWidth @defaultBorderStyle #ccc;
-	background-color: #f9f9f9;
-}
-
-.item footer a {
-	color: #333;
-	text-decoration: none;
-}
-*/

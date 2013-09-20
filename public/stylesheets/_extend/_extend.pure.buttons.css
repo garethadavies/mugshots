@@ -55,3 +55,9 @@ button[type="submit"]:hover {
   color: #ffffff;
   border: none;
 }
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+@media (max-width: 767px) {
+  
+}
