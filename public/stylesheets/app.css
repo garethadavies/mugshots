@@ -102,7 +102,7 @@ Items
 }
 .mugshot header {
   padding: 12px;
-  background-color: #184048;
+  background-color: #1e3e4f;
   color: #ffffff;
   border-radius: 3px;
 }
@@ -124,7 +124,7 @@ Items
   font-weight: 800;
 }
 li span.bold {
-  color: #184048;
+  color: #1e3e4f;
 }
 /*------------------------------------*\
   $ Clearfix
@@ -170,6 +170,9 @@ li span.bold {
 .no-margin {
   margin: 0;
 }
+.full-width {
+  width: 100%;
+}
 /*------------------------------------*\
   $ Headers
 \*------------------------------------*/
@@ -183,10 +186,10 @@ h1 {
 
   margin: 6rem 0 0 0;
   padding-bottom: 0;
-  text-shadow: 1px 2px 2px #184048;
+  text-shadow: 1px 2px 2px #1e3e4f;
 }
 h2 {
-  color: #184048;
+  color: #1e3e4f;
   font-style: normal;
   font-weight: 400;
   font-size: 0.9rem;
@@ -214,7 +217,8 @@ h2 {
   background-color: #f9f9f9;
   border-radius: 0 0 3px 3px;
 }
-.form-footer button {
+.form-footer button[type="clear"],
+.form-footer button[type="button"] {
   border-left: 1px solid #dddddd;
   border-top: 1px solid #dddddd;
   border-right: 1px solid #dddddd;

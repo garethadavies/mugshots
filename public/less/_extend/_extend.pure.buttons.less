@@ -29,7 +29,6 @@
 .pure-button-custom {
 	background: @white;
 	background: linear-gradient(to bottom, @white, @grayFaint);
-	// border: @defaultBorderWidth @defaultBorderStyle @gray;
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
 	border-radius: @defaultBorderRadius;
 }
@@ -47,6 +46,7 @@
 
 button[type="submit"],
 button[type="submit"]:hover {
-	background: @darkBlue;
+	background: linear-gradient(to bottom, lighten(@darkBlue, 10%), @darkBlue);
 	color: @white;
+	border: none;
 }

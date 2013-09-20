@@ -212,6 +212,10 @@ li span.bold {
 	margin: 0;
 }
 
+.full-width {
+	width: 100%;
+}
+
 
 
 
@@ -271,7 +275,8 @@ h2 {
 	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius; 
 }
 
-.form-footer button {
+.form-footer button[type="clear"],
+.form-footer button[type="button"] {
 	border-left: @defaultBorderWidth @defaultBorderStyle @grayLighter;
 	border-top: @defaultBorderWidth @defaultBorderStyle @grayLighter;
 	border-right: @defaultBorderWidth @defaultBorderStyle @grayLighter;
