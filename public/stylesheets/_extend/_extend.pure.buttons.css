@@ -37,7 +37,8 @@
 /*------------------------------------*\
   $ Buttons
 \*------------------------------------*/
-.pure-button-custom {
+.pure-button-custom,
+.pure-button-custom:focus {
   background: #ffffff;
   background: linear-gradient(to bottom, #ffffff, #f9f9f9);
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
