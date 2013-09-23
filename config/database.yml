@@ -4,21 +4,17 @@ development:
   encoding: unicode
   database: mugshots
   host: localhost
-  pool: 5
-  timeout: 5000
+  username: garethadavies
+  password: postgresql
 
 test:
   adapter: postgresql
   encoding: unicode
   database: mugshots
   host: localhost
-  pool: 5
-  timeout: 5000
+  username: postgresql
 
 production:
   adapter: postgresql
   encoding: unicode
   database: mugshots
-  host: localhost
-  pool: 5
-  timeout: 5000
