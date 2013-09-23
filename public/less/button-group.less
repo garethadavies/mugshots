@@ -27,16 +27,13 @@
 
 .button-group button {
 	width: 100%;
-	// text-align: left;
 	border-radius: 0;
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @defaultBorderColor;
   padding-left: @defaultPadding;
   padding-right: @defaultPadding;
-  margin: 0;
 }
 
 .button-group button:first-child {
-	// border-left: @defaultBorderWidth @defaultBorderStyle @defaultBorderColor;
 	border-top-left-radius: @defaultBorderRadius;
 	border-top-right-radius: @defaultBorderRadius;
 }
@@ -45,12 +42,6 @@
 	border-bottom-left-radius: @defaultBorderRadius;
 	border-bottom-right-radius: @defaultBorderRadius;
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
-}
-
-// Adjust any icon within a button group
-.button-group [class^="icon-"]:before,
-.button-group [class*=" icon-"]:before {
-	// margin-right: 0;
 }
 
 
@@ -67,30 +58,36 @@
 	\*------------------------------------*/
 
 	.button-group button {
-		width: 100%;
-		// text-align: left;
+		width: auto;
 		border-radius: 0;
-		border-left: none;
-	  padding-left: @defaultPadding;
-	  padding-right: @defaultPadding;
+	  border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
+	  border-right: @defaultBorderWidth @defaultBorderStyle @defaultBorderColor;
 	  margin: 0;
 	}
 
 	.button-group button:first-child {
 		border-left: @defaultBorderWidth @defaultBorderStyle @defaultBorderColor;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
 		border-top-left-radius: @defaultBorderRadius;
 		border-bottom-left-radius: @defaultBorderRadius;
 	}
 
 	.button-group button:last-child {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
 		border-top-right-radius: @defaultBorderRadius;
 		border-bottom-right-radius: @defaultBorderRadius;
 	}
 
-	// Adjust any icon within a button group
-	.button-group [class^="icon-"]:before,
-	.button-group [class*=" icon-"]:before {
-		// margin-right: 0;
+	/*
+	Alignment
+	*/
+
+	// This lets us right-align a menu to a parent paragraph
+	.button-group-parent-aligned {
+		float: right;
+		margin-top: -2.8rem;
 	}
 
 }

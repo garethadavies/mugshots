@@ -42,7 +42,6 @@
   border-bottom: 1px solid #cccccc;
   padding-left: 12px;
   padding-right: 12px;
-  margin: 0;
 }
 .button-group button:first-child {
   border-top-left-radius: 3px;
@@ -61,20 +60,30 @@
   	  $ Button group
   	\*------------------------------------*/
   .button-group button {
-    width: 100%;
+    width: auto;
     border-radius: 0;
-    border-left: none;
-    padding-left: 12px;
-    padding-right: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-right: 1px solid #cccccc;
     margin: 0;
   }
   .button-group button:first-child {
     border-left: 1px solid #cccccc;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
   }
   .button-group button:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+  }
+  /*
+  	Alignment
+  	*/
+  .button-group-parent-aligned {
+    float: right;
+    margin-top: -2.8rem;
   }
 }
