@@ -1,12 +1,12 @@
 /*------------------------------------*\
-  $$ Extend Pure Buttons
+  $$ Mugshots
   Author: Gareth Davies @garethadavies
 \*------------------------------------*/
 /*
  * CONTENTS
  * Imports
- * Global Reset & Standards
- * Variables
+ * Font Styles
+ * Headers
  */
 /*------------------------------------*\
   $ Imports
@@ -35,30 +35,40 @@
   $ Fonts
 \*------------------------------------*/
 /*------------------------------------*\
-  $ Buttons
+  $ Font Styles
 \*------------------------------------*/
-.pure-button-custom,
-.pure-button-custom:focus {
-  background: #ffffff;
-  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
+.bold {
+  font-weight: 800;
 }
-.pure-button-custom:hover {
-  background: #ffffff;
+li span.bold {
+  color: #1e3e4f;
 }
 /*------------------------------------*\
-  $ Submit Button
+  $ Headers
 \*------------------------------------*/
-button[type="submit"],
-button[type="submit"]:hover {
-  background: linear-gradient(to bottom, #2c5b74, #1e3e4f);
+h1 {
+  font-family: 'Londrina Solid', cursive;
+  font-style: normal;
+  font-weight: 400;
   color: #ffffff;
-  border: none;
+  /* #6A4729 */
+
+  line-height: 300%;
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px 1px #1e3e4f;
 }
 /*------------------------------------*\
   $ Media Queries
 \*------------------------------------*/
-@media (max-width: 767px) {
-  
+@media (min-width: 767px) {
+  /*------------------------------------*\
+  	  $ Headers
+  	\*------------------------------------*/
+  h2 {
+    font-size: 1rem;
+    color: #29566d;
+    font-weight: 400;
+    margin-top: -7.4rem;
+  }
 }

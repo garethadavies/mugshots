@@ -1,0 +1,93 @@
+/*------------------------------------*\
+  $$ Mugshots - Button group
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+
+/*
+ * CONTENTS
+ * Imports
+ * Button group 
+ */
+
+
+
+
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+ 
+@import '_variables.less';
+
+
+
+
+/*------------------------------------*\
+  $ Button Group
+\*------------------------------------*/
+
+.button-group button {
+	width: 100%;
+	border-radius: 0;
+	border-bottom: @defaultBorderWidth @defaultBorderStyle @defaultBorderColor;
+  padding-left: @defaultPadding;
+  padding-right: @defaultPadding;
+}
+
+.button-group button:first-child {
+	border-top-left-radius: @defaultBorderRadius;
+	border-top-right-radius: @defaultBorderRadius;
+}
+
+.button-group button:last-child {
+	border-bottom-left-radius: @defaultBorderRadius;
+	border-bottom-right-radius: @defaultBorderRadius;
+	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+
+@media (min-width: 767px) {
+
+	/*------------------------------------*\
+	  $ Button group
+	\*------------------------------------*/
+
+	.button-group button {
+		width: auto;
+		border-radius: 0;
+	  border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
+	  border-right: @defaultBorderWidth @defaultBorderStyle @defaultBorderColor;
+	  margin: 0;
+	}
+
+	.button-group button:first-child {
+		border-left: @defaultBorderWidth @defaultBorderStyle @defaultBorderColor;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		border-top-left-radius: @defaultBorderRadius;
+		border-bottom-left-radius: @defaultBorderRadius;
+	}
+
+	.button-group button:last-child {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: @defaultBorderRadius;
+		border-bottom-right-radius: @defaultBorderRadius;
+	}
+
+	/*
+	Alignment
+	*/
+
+	// This lets us right-align a menu to a parent paragraph
+	.button-group-parent-aligned {
+		float: right;
+		margin-top: -2.8rem;
+	}
+
+}

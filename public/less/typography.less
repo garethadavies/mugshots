@@ -1,0 +1,75 @@
+/*------------------------------------*\
+  $$ Mugshots
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+
+/*
+ * CONTENTS
+ * Imports
+ * Font Styles
+ * Headers
+ */
+
+
+
+
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+ 
+@import '_variables.less';
+
+
+
+
+/*------------------------------------*\
+  $ Font Styles
+\*------------------------------------*/
+
+.bold {
+	font-weight: 800;
+}
+
+li span.bold {
+	color: @darkBlue;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Headers
+\*------------------------------------*/
+
+h1 {
+	font-family: @fancyFont;
+	font-style: normal;
+	font-weight: 400;
+	color: @white; /* #6A4729 */
+	line-height: 300%;
+	padding: 0;
+	margin: 0;
+	text-shadow: 1px 1px 1px @darkBlue;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+
+@media (min-width: 767px) {
+
+	/*------------------------------------*\
+	  $ Headers
+	\*------------------------------------*/
+
+	h2 {
+		font-size: 1rem;
+		color: @midBlue;
+		font-weight: 400;
+		margin-top: -7.4rem;
+	}
+
+}

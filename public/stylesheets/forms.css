@@ -1,12 +1,10 @@
 /*------------------------------------*\
-  $$ Extend Pure Buttons
+  $$ Mugshots
   Author: Gareth Davies @garethadavies
 \*------------------------------------*/
 /*
  * CONTENTS
  * Imports
- * Global Reset & Standards
- * Variables
  */
 /*------------------------------------*\
   $ Imports
@@ -35,30 +33,21 @@
   $ Fonts
 \*------------------------------------*/
 /*------------------------------------*\
-  $ Buttons
+  $ Forms
 \*------------------------------------*/
-.pure-button-custom,
-.pure-button-custom:focus {
-  background: #ffffff;
-  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
+.form-footer {
+  padding: 12px 18px;
+  border-top: 1px solid #cccccc;
+  text-align: right;
+  background-color: #f9f9f9;
+  border-radius: 0 0 3px 3px;
 }
-.pure-button-custom:hover {
-  background: #ffffff;
+.form-footer button {
+  margin: 0 !important;
 }
-/*------------------------------------*\
-  $ Submit Button
-\*------------------------------------*/
-button[type="submit"],
-button[type="submit"]:hover {
-  background: linear-gradient(to bottom, #2c5b74, #1e3e4f);
-  color: #ffffff;
-  border: none;
-}
-/*------------------------------------*\
-  $ Media Queries
-\*------------------------------------*/
-@media (max-width: 767px) {
-  
+.form-footer button[type="clear"],
+.form-footer button[type="button"] {
+  border-left: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
 }

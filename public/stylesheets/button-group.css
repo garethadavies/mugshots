@@ -1,14 +1,11 @@
 /*------------------------------------*\
-  $$ Mugshots
+  $$ Mugshots - Button group
   Author: Gareth Davies @garethadavies
 \*------------------------------------*/
 /*
  * CONTENTS
  * Imports
- * Global Reset & Standards
- * Scaffolding
- * Headers
- * Menu bar
+ * Button group 
  */
 /*------------------------------------*\
   $ Imports
@@ -37,66 +34,56 @@
   $ Fonts
 \*------------------------------------*/
 /*------------------------------------*\
-  $ Global Reset & Standards
+  $ Button Group
 \*------------------------------------*/
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/*------------------------------------*\
-  $ Scaffolding
-\*------------------------------------*/
-body {
-  background: #aedbe4;
-  /* #E0C598 */
-
-}
-.page-header {
-  overflow: hidden;
-}
-.inner-page-header {
-  margin: 0 auto;
-  position: relative;
-  /* Bring the mug image in line with the inner-wrapper */
-
-  left: -10px;
-  max-width: 800px;
-}
-.inner-wrapper {
-  padding: 0 18px;
-  margin: 0 auto;
-  max-width: 730px;
-}
-img {
+.button-group button {
   width: 100%;
+  border-radius: 0;
+  border-bottom: 1px solid #cccccc;
+  padding-left: 12px;
+  padding-right: 12px;
 }
-/*------------------------------------*\
-  $ Headers
-\*------------------------------------*/
-.content-header {
-  min-height: 60px;
-  /*background-color: #ddd;*/
-
+.button-group button:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
-/*------------------------------------*\
-  $ Menu Bar
-\*------------------------------------*/
-.menu-bar {
-  margin: 0 0 24px 0;
+.button-group button:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 /*------------------------------------*\
   $ Media Queries
 \*------------------------------------*/
 @media (min-width: 767px) {
   /*------------------------------------*\
-  	  $ Scaffolding
+  	  $ Button group
   	\*------------------------------------*/
-  .inner-page-header {
-    /* Bring the mug image in line with the inner-wrapper */
-  
-    left: -24px;
+  .button-group button {
+    width: auto;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-right: 1px solid #cccccc;
+    margin: 0;
+  }
+  .button-group button:first-child {
+    border-left: 1px solid #cccccc;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .button-group button:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  /*
+  	Alignment
+  	*/
+  .button-group-parent-aligned {
+    float: right;
+    margin-top: -2.8rem;
   }
 }

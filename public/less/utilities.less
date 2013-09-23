@@ -1,0 +1,111 @@
+/*------------------------------------*\
+  $$ Mugshots
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+
+/*
+ * CONTENTS 
+ * Imports
+ * Clearfix
+ * Helper classes
+ */
+
+
+
+
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+ 
+@import '_variables.less';
+
+
+
+
+/*------------------------------------*\
+  $ Clearfix
+\*------------------------------------*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Helper classes
+\*------------------------------------*/
+
+.padding {
+	padding: @defaultPadding;
+}
+
+.extra-padding {
+	padding: @defaultPadding*1.5;
+}
+
+.padding-left {
+	padding-left: @defaultPadding;
+}
+
+.padding-right {
+	padding-right: @defaultPadding;
+}
+
+.margin {
+	margin: @defaultMargin;
+}
+
+.margin-left {
+	margin-left: @defaultMargin;
+}
+
+.margin-right {
+	margin-right: @defaultMargin;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.no-margin-top {
+	margin-top: 0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.hide {
+	display: none;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+
+@media (min-width: 767px) {
+
+	/*------------------------------------*\
+	  $ Helper classes
+	\*------------------------------------*/
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+}

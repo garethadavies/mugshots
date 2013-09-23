@@ -1,13 +1,13 @@
 /*------------------------------------*\
-  $$ Extend Pure Buttons
+  $$ Mugshots
   Author: Gareth Davies @garethadavies
 \*------------------------------------*/
 
 /*
  * CONTENTS
  * Imports
- * Global Reset & Standards
- * Variables
+ * Items
+ * Mugshots 
  */
 
 
@@ -16,40 +16,36 @@
 /*------------------------------------*\
   $ Imports
 \*------------------------------------*/
-
-@import '../_variables.less'; 
+ 
+@import '_variables.less';
 
 
 
 
 /*------------------------------------*\
-  $ Buttons
+  $ Item
 \*------------------------------------*/
 
-.pure-button-custom,
-.pure-button-custom:focus {
-	background: @white;
-	background: linear-gradient(to bottom, @white, @grayFaint);
+.item {
+	background-color: @white;
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
 	border-radius: @defaultBorderRadius;
-}
-
-.pure-button-custom:hover {
-	background: @white;
+	margin: 0 0 @defaultMargin*2 0;
 }
 
 
 
 
 /*------------------------------------*\
-  $ Submit Button
+  $ Mugshots
 \*------------------------------------*/
 
-button[type="submit"],
-button[type="submit"]:hover {
-	background: linear-gradient(to bottom, lighten(@darkBlue, 10%), @darkBlue);
+.mugshot header {
+	padding: @defaultPadding;
+	background-color: @darkBlue;
 	color: @white;
-	border: none;
+	border-radius: @defaultBorderRadius;
+	margin-bottom: @defaultMargin;
 }
 
 
@@ -59,6 +55,18 @@ button[type="submit"]:hover {
   $ Media Queries
 \*------------------------------------*/
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
+
+	/*------------------------------------*\
+	  $ Item
+	\*------------------------------------*/
+
+	.item-left {
+		margin-right: @defaultMargin;
+	}
+
+	.item-right {
+		margin-left: @defaultMargin;
+	}
 
 }

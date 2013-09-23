@@ -15,6 +15,7 @@
     "requirejs-text": "~2.0.5",
     "backbone-amd": "~1.0.0",
     "underscore-amd": "~1.4.4",
-    "marionette": "~1.0.3"  
+    "marionette": "~1.0.3",
+    "FitText.js": "" 
   }
 }

@@ -35,30 +35,18 @@
   $ Fonts
 \*------------------------------------*/
 /*------------------------------------*\
-  $ Buttons
+  $ Inputs
 \*------------------------------------*/
-.pure-button-custom,
-.pure-button-custom:focus {
-  background: #ffffff;
-  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+.pure-form input[type=text],
+.pure-form input[type=password],
+.pure-form input[type=email],
+.pure-form select,
+.pure-form textarea {
   border-radius: 3px;
 }
-.pure-button-custom:hover {
-  background: #ffffff;
-}
 /*------------------------------------*\
-  $ Submit Button
+  $ Labels
 \*------------------------------------*/
-button[type="submit"],
-button[type="submit"]:hover {
-  background: linear-gradient(to bottom, #2c5b74, #1e3e4f);
-  color: #ffffff;
-  border: none;
-}
-/*------------------------------------*\
-  $ Media Queries
-\*------------------------------------*/
-@media (max-width: 767px) {
-  
+.pure-form label {
+  margin-top: 12px;
 }

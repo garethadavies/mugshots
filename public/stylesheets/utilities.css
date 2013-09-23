@@ -1,12 +1,12 @@
 /*------------------------------------*\
-  $$ Extend Pure Buttons
+  $$ Mugshots
   Author: Gareth Davies @garethadavies
 \*------------------------------------*/
 /*
- * CONTENTS
+ * CONTENTS 
  * Imports
- * Global Reset & Standards
- * Variables
+ * Clearfix
+ * Helper classes
  */
 /*------------------------------------*\
   $ Imports
@@ -35,30 +35,63 @@
   $ Fonts
 \*------------------------------------*/
 /*------------------------------------*\
-  $ Buttons
+  $ Clearfix
 \*------------------------------------*/
-.pure-button-custom,
-.pure-button-custom:focus {
-  background: #ffffff;
-  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  border-radius: 3px;
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
 }
-.pure-button-custom:hover {
-  background: #ffffff;
+.clearfix:after {
+  clear: both;
 }
 /*------------------------------------*\
-  $ Submit Button
+  $ Helper classes
 \*------------------------------------*/
-button[type="submit"],
-button[type="submit"]:hover {
-  background: linear-gradient(to bottom, #2c5b74, #1e3e4f);
-  color: #ffffff;
-  border: none;
+.padding {
+  padding: 12px;
+}
+.extra-padding {
+  padding: 18px;
+}
+.padding-left {
+  padding-left: 12px;
+}
+.padding-right {
+  padding-right: 12px;
+}
+.margin {
+  margin: 12px;
+}
+.margin-left {
+  margin-left: 12px;
+}
+.margin-right {
+  margin-right: 12px;
+}
+.no-margin {
+  margin: 0;
+}
+.no-margin-top {
+  margin-top: 0;
+}
+.full-width {
+  width: 100%;
+}
+.hide {
+  display: none;
 }
 /*------------------------------------*\
   $ Media Queries
 \*------------------------------------*/
-@media (max-width: 767px) {
-  
+@media (min-width: 767px) {
+  /*------------------------------------*\
+  	  $ Helper classes
+  	\*------------------------------------*/
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
 }

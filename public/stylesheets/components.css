@@ -1,12 +1,12 @@
 /*------------------------------------*\
-  $$ Extend Pure Buttons
+  $$ Mugshots
   Author: Gareth Davies @garethadavies
 \*------------------------------------*/
 /*
  * CONTENTS
  * Imports
- * Global Reset & Standards
- * Variables
+ * Items
+ * Mugshots 
  */
 /*------------------------------------*\
   $ Imports
@@ -35,30 +35,35 @@
   $ Fonts
 \*------------------------------------*/
 /*------------------------------------*\
-  $ Buttons
+  $ Item
 \*------------------------------------*/
-.pure-button-custom,
-.pure-button-custom:focus {
-  background: #ffffff;
-  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+.item {
+  background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 3px;
-}
-.pure-button-custom:hover {
-  background: #ffffff;
+  margin: 0 0 24px 0;
 }
 /*------------------------------------*\
-  $ Submit Button
+  $ Mugshots
 \*------------------------------------*/
-button[type="submit"],
-button[type="submit"]:hover {
-  background: linear-gradient(to bottom, #2c5b74, #1e3e4f);
+.mugshot header {
+  padding: 12px;
+  background-color: #1e3e4f;
   color: #ffffff;
-  border: none;
+  border-radius: 3px;
+  margin-bottom: 12px;
 }
 /*------------------------------------*\
   $ Media Queries
 \*------------------------------------*/
-@media (max-width: 767px) {
-  
+@media (min-width: 767px) {
+  /*------------------------------------*\
+  	  $ Item
+  	\*------------------------------------*/
+  .item-left {
+    margin-right: 12px;
+  }
+  .item-right {
+    margin-left: 12px;
+  }
 }

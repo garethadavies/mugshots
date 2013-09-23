@@ -1,0 +1,44 @@
+/*------------------------------------*\
+  $$ Mugshots
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+
+/*
+ * CONTENTS
+ * Imports
+ */
+
+
+
+
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+ 
+@import '_variables.less';
+
+
+
+
+/*------------------------------------*\
+  $ Forms
+\*------------------------------------*/
+
+.form-footer {
+	padding: @defaultPadding @defaultPadding*1.5;
+	border-top: @defaultBorderWidth @defaultBorderStyle @defaultBorderColor;
+	text-align: right;
+	background-color: @grayFaint;
+	border-radius: 0 0 @defaultBorderRadius @defaultBorderRadius; 
+}
+
+.form-footer button {
+	margin: 0 !important;
+}
+
+.form-footer button[type="clear"],
+.form-footer button[type="button"] {
+	border-left: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+	border-top: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+	border-right: @defaultBorderWidth @defaultBorderStyle @grayLighter;
+}
