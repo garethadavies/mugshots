@@ -35,9 +35,9 @@
 
         <div id="page-header-text" class="pure-u-3-5">
 
-          <h1>Mugshots!</h1>
+          <h1>MUGSHOTS!</h1>
 
-          <h2>Helping to fuel industry since god knows when...</h2>
+          <h2 class="pure-hidden-phone">Fueling industry via caffeine since some time in the past!</h2>
 
         </div>
 
@@ -49,37 +49,25 @@
 
   <div class="inner-wrapper" role="main">
 
-		<!-- Menu bar -->
-	
-    <section class="menu-bar clearfix">
-
-      <button class="pure-button pure-button-custom right"><i class="icon-lock"></i> Login</button> 
-
-      <button class="pure-button pure-button-custom right"><i class="icon-cog"></i> Settings</button> 
-
-      <button class="pure-button pure-button-custom right"><i class="icon-user-add"></i> Add</button>
-
-      <p>Welcome to the <b>Just Checking</b> Mugshots!</p>
-    
-    </section>
-
     <!-- Login & Register -->
 
 		<div class="pure-g-r">
 
       <div class="pure-u-1-2">
 
-    		<section class="item">
+        <section class="item item-left">
 
           <form class="pure-form pure-form-stacked">
 
             <div class="extra-padding">
 
-              <fieldset class="pure-group">
-                
-                <legend>Log In</legend>
+              <fieldset>
 
-                <label for="email">Email Address</label>
+                <p class="no-margin-top">Log in to edit your organisation's drinks roster.</p>
+                
+                <legend><i class="icon-lock"></i> Log In</legend>
+
+                <label for="email">Email address</label>
                 <input id="email" class="pure-input-1" type="email" placeholder="Enter your email address">
 
                 <label for="email">Password</label>
@@ -103,42 +91,63 @@
 
       <div class="pure-u-1-2">
 
-      	<section class="item">
+        <section class="item item-right">
 
-	        <form class="pure-form pure-form-stacked">
+          <form class="pure-form pure-form-stacked">
 
-	          <div class="extra-padding">
+            <div class="extra-padding">
 
-	            <fieldset class="pure-group">
-	              
-	              <legend>Register</legend>
+              <fieldset>
+                
+                <legend><i class="icon-pencil"></i> Register</legend>
 
-	              <label for="email">Organisation</label>
-	              <input id="email" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
+                <p class="no-margin-top">Register your organisation and start your own drinks roster.</p>
 
-	              <label for="email">Email Address</label>
-	              <input id="email" class="pure-input-1" type="email" placeholder="Enter an email address">
+                <label for="email">Organisation</label>
+                <input id="email" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
 
-	              <label for="email">Password</label>
-	              <input id="email" class="pure-input-1" type="password" placeholder="Enter a password">
-	            
-	            </fieldset>
+                <label for="email">Email address</label>
+                <input id="email" class="pure-input-1" type="email" placeholder="Enter an email address">
 
-	          </div>
+                <label for="email">Password</label>
+                <input id="email" class="pure-input-1" type="password" placeholder="Enter a password">
 
-	          <div class="form-footer">
+                <label for="email">Confirm password</label>
+                <input id="email" class="pure-input-1" type="password" placeholder="Confirm your password">
+              
+              </fieldset>
 
-	            <button type="submit" class="pure-button pure-button-custom full-width">Register <i class="icon-right-open"></i></button>
+            </div>
 
-	          </div>
+            <div class="form-footer">
 
-	        </form>
+              <button type="submit" class="pure-button pure-button-custom full-width">Register <i class="icon-right-open"></i></button>
 
-	      </section>
+            </div>
+
+          </form>
+
+        </section>
 
       </div>
 
     </div>
+
+    <!-- Menu bar -->
+  
+    <section class="menu-bar clearfix">
+
+      <p class="no-margin-top">Welcome to the <b>Just Checking</b> Mugshots!</p>
+
+      <div class="button-group">
+
+        <button class="pure-button pure-button-custom right"><i class="icon-cog"></i> Settings</button> 
+
+        <button class="pure-button pure-button-custom right"><i class="icon-user-add"></i> Add</button>
+
+      </div>
+    
+    </section>
 
 		<!-- New mugshot -->
 
@@ -150,7 +159,7 @@
 
           <div class="pure-u-1-2 extra-padding">
 
-            <fieldset class="pure-group">
+            <fieldset>
               
               <legend>Personal Details</legend>
 
@@ -274,7 +283,7 @@
 
   	$(function() {
 
-		  $('#page-header-text').fitText(0.8);
+		  $('#page-header-text').fitText(0.85);
 
   	});
 

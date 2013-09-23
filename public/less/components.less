@@ -28,7 +28,6 @@
 
 .item {
 	background-color: @white;
-	/*border: @defaultBorderWidth @defaultBorderStyle #6A472B;*/
 	border-bottom: @defaultBorderWidth @defaultBorderStyle @bottomBorderColor;
 	border-radius: @defaultBorderRadius;
 	margin: 0 0 @defaultMargin*2 0;
@@ -47,4 +46,27 @@
 	color: @white;
 	border-radius: @defaultBorderRadius;
 	margin-bottom: @defaultMargin;
+}
+
+
+
+
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+
+@media (min-width: 767px) {
+
+	/*------------------------------------*\
+	  $ Item
+	\*------------------------------------*/
+
+	.item-left {
+		margin-right: @defaultMargin;
+	}
+
+	.item-right {
+		margin-left: @defaultMargin;
+	}
+
 }

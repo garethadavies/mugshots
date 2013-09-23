@@ -46,19 +46,30 @@ h1 {
 	font-style: normal;
 	font-weight: 400;
 	color: @white; /* #6A4729 */
-	line-height: 280%;
+	line-height: 300%;
 	padding: 0;
 	margin: 0;
 	text-shadow: 1px 1px 2px @darkBlue;
 }
 
-h2 {
-	display: none;
-	color: @darkBlue;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 0.9rem;
-	width: 100%;
-	text-align: right;
-	margin-top: -20px;
+
+
+
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+
+@media (min-width: 767px) {
+
+	/*------------------------------------*\
+	  $ Headers
+	\*------------------------------------*/
+
+	h2 {
+		font-size: 1rem;
+		color: @darkBlue;
+		font-weight: 400;
+		margin-top: -7rem;
+	}
+
 }

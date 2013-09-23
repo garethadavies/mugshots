@@ -43,14 +43,6 @@
   $ Helper classes
 \*------------------------------------*/
 
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
 .padding {
 	padding: @defaultPadding;
 }
@@ -83,6 +75,10 @@
 	margin: 0;
 }
 
+.no-margin-top {
+	margin-top: 0;
+}
+
 .full-width {
 	width: 100%;
 }
@@ -94,15 +90,18 @@
   $ Media Queries
 \*------------------------------------*/
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
 
 	/*------------------------------------*\
 	  $ Helper classes
 	\*------------------------------------*/
 
-	.right,
 	.left {
-		float: none;
+		float: left;
+	}
+
+	.right {
+		float: right;
 	}
 
 }

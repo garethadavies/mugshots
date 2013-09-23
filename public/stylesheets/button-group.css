@@ -1,12 +1,11 @@
 /*------------------------------------*\
-  $$ Mugshots
+  $$ Mugshots - Button group
   Author: Gareth Davies @garethadavies
 \*------------------------------------*/
 /*
- * CONTENTS 
+ * CONTENTS
  * Imports
- * Clearfix
- * Helper classes
+ * Button group 
  */
 /*------------------------------------*\
   $ Imports
@@ -35,60 +34,47 @@
   $ Fonts
 \*------------------------------------*/
 /*------------------------------------*\
-  $ Clearfix
+  $ Button Group
 \*------------------------------------*/
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-/*------------------------------------*\
-  $ Helper classes
-\*------------------------------------*/
-.padding {
-  padding: 12px;
-}
-.extra-padding {
-  padding: 18px;
-}
-.padding-left {
+.button-group button {
+  width: 100%;
+  border-radius: 0;
+  border-bottom: 1px solid #cccccc;
   padding-left: 12px;
-}
-.padding-right {
   padding-right: 12px;
-}
-.margin {
-  margin: 12px;
-}
-.margin-left {
-  margin-left: 12px;
-}
-.margin-right {
-  margin-right: 12px;
-}
-.no-margin {
   margin: 0;
 }
-.no-margin-top {
-  margin-top: 0;
+.button-group button:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
-.full-width {
-  width: 100%;
+.button-group button:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 /*------------------------------------*\
   $ Media Queries
 \*------------------------------------*/
 @media (min-width: 767px) {
   /*------------------------------------*\
-  	  $ Helper classes
+  	  $ Button group
   	\*------------------------------------*/
-  .left {
-    float: left;
+  .button-group button {
+    width: 100%;
+    border-radius: 0;
+    border-left: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0;
   }
-  .right {
-    float: right;
+  .button-group button:first-child {
+    border-left: 1px solid #cccccc;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .button-group button:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 }

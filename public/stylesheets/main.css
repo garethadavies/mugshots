@@ -1,7 +1,9 @@
 @import 'fontello.css';
 @import 'http://yui.yahooapis.com/combo?pure/0.3.0/base-min.css&pure/0.3.0/grids-min.css&pure/0.3.0/forms-min.css&pure/0.3.0/buttons-min.css';
 @import '_extend/_extend.pure.buttons.css';
+@import '_extend/_extend.pure.forms.css';
 @import 'forms.css';
+@import 'button-group.css';
 @import 'components.css';
 @import 'lists.css';
 @import 'typography.css';

@@ -39,8 +39,6 @@
 \*------------------------------------*/
 .item {
   background-color: #ffffff;
-  /*border: @defaultBorderWidth @defaultBorderStyle #6A472B;*/
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 3px;
   margin: 0 0 24px 0;
@@ -54,4 +52,18 @@
   color: #ffffff;
   border-radius: 3px;
   margin-bottom: 12px;
+}
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+@media (min-width: 767px) {
+  /*------------------------------------*\
+  	  $ Item
+  	\*------------------------------------*/
+  .item-left {
+    margin-right: 12px;
+  }
+  .item-right {
+    margin-left: 12px;
+  }
 }
