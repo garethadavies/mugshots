@@ -57,7 +57,7 @@
 
         <section class="item item-left">
 
-          <form class="pure-form pure-form-stacked">
+          <form id="form-login" class="pure-form pure-form-stacked">
 
             <div class="extra-padding">
 
@@ -67,11 +67,11 @@
                 
                 <legend><i class="icon-lock"></i> Log In</legend>
 
-                <label for="email">Email address</label>
-                <input id="email" class="pure-input-1" type="email" placeholder="Enter your email address">
+                <label for="form-login-email">Email address</label>
+                <input id="form-login-email" class="pure-input-1" type="email" placeholder="Enter your email address">
 
-                <label for="email">Password</label>
-                <input id="email" class="pure-input-1" type="password" placeholder="Enter your password">
+                <label for="form-login-password">Password</label>
+                <input id="form-login-password" class="pure-input-1" type="password" placeholder="Enter your password">
               
               </fieldset>
 
@@ -93,7 +93,7 @@
 
         <section class="item item-right">
 
-          <form class="pure-form pure-form-stacked">
+          <form id="form-register" class="pure-form pure-form-stacked">
 
             <div class="extra-padding">
 
@@ -103,17 +103,17 @@
 
                 <p>Register your organisation and start your own drinks roster.</p>
 
-                <label for="email">Organisation</label>
-                <input id="email" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
+                <label for="form-register-organisation">Organisation</label>
+                <input id="form-register-organisation" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
 
-                <label for="email">Email address</label>
-                <input id="email" class="pure-input-1" type="email" placeholder="Enter an email address">
+                <label for="form-register-email">Email address</label>
+                <input id="form-register-email" class="pure-input-1" type="email" placeholder="Enter an email address">
 
-                <label for="email">Password</label>
-                <input id="email" class="pure-input-1" type="password" placeholder="Enter a password">
+                <label for="form-register-password">Password</label>
+                <input id="form-register-password" class="pure-input-1" type="password" placeholder="Enter a password">
 
-                <label for="email">Confirm password</label>
-                <input id="email" class="pure-input-1" type="password" placeholder="Confirm your password">
+                <label for="form-register-confirm">Confirm password</label>
+                <input id="form-register-confirm" class="pure-input-1" type="password" placeholder="Confirm your password">
               
               </fieldset>
 
@@ -156,7 +156,7 @@
 
     <section id="mugshot-add-container" class="item hide">
 
-      <form class="pure-form pure-form-stacked">
+      <form id="form-add" class="pure-form pure-form-stacked">
 
         <div class="pure-g-r">
 
@@ -166,17 +166,17 @@
               
               <legend>Personal Details</legend>
 
-              <label for="email">First name</label>
-              <input id="email" class="pure-input-1" type="text" maxlength="50" placeholder="First name">
+              <label for="form-add-firstname">First name</label>
+              <input id="form-add-firstname" class="pure-input-1" type="text" maxlength="50" placeholder="First name">
 
-              <label for="email">Surname</label>
-              <input id="email" class="pure-input-1" type="text" maxlength="50" placeholder="Surname">
+              <label for="form-add-surname">Surname</label>
+              <input id="form-add-surname" class="pure-input-1" type="text" maxlength="50" placeholder="Surname">
 
-              <label for="email">Email Address</label>
-              <input id="email" class="pure-input-1" type="email" maxlength="100" placeholder="Email Address">
+              <label for="form-add-email">Email Address</label>
+              <input id="form-add-email" class="pure-input-1" type="email" maxlength="100" placeholder="Email Address">
 
-              <label for="email">Mugshot (.jpg, .gif or .png)</label>
-              <input id="email" class="pure-input-1" type="file">
+              <label for="form-add-picture">Mugshot (.jpg, .gif or .png)</label>
+              <input id="form-add-picture" class="pure-input-1" type="file">
             
             </fieldset>
 
@@ -188,15 +188,15 @@
               
               <legend>Drink Preferences</legend>
 
-              <label for="form-drink">Drink of choice</label>
-              <select name="drink" id="form-drink" class="pure-input-1">
+              <label for="form-add-drink">Drink of choice</label>
+              <select name="drink" id="form-add-drink" class="pure-input-1">
                 <option value="1">Tea</option>
                 <option value="2">Coffee</option>
                 <option value="3">Water</option>
               </select>
 
-              <label for="email">Number of sugars</label>
-              <select name="drink" id="form-drink" class="pure-input-1">
+              <label for="form-add-sugars">Number of sugars</label>
+              <select name="sugars" id="form-add-sugars" class="pure-input-1">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -205,16 +205,16 @@
                 <option value="5">5</option>
               </select>
 
-              <label for="email">Milk type</label>
-              <select name="drink" id="form-drink" class="pure-input-1">
+              <label for="form-add-milk">Milk type</label>
+              <select name="milk" id="form-add-milk" class="pure-input-1">
                 <option value="0">Full-fat</option>
                 <option value="1">Semi-skimmed</option>
                 <option value="2">Skimmed</option>
                 <option value="3">1%</option>
               </select>
 
-              <label for="email">Other preferences</label>
-              <textarea name="" id="" cols="30" rows="6" class="pure-input-1"></textarea>
+              <label for="form-add-preferences">Other preferences</label>
+              <textarea name="preferences" id="form-add-preferences" cols="30" rows="6" class="pure-input-1"></textarea>
             
             </fieldset>
 
@@ -238,7 +238,7 @@
 
     <section id="organisation-settings-container" class="item hide">
 
-      <form class="pure-form pure-form-stacked">
+      <form id="form-settings" class="pure-form pure-form-stacked">
 
         <div class="pure-g-r">
 
@@ -248,11 +248,11 @@
               
               <legend id="anchor-register">Organisation settings</legend>
 
-              <label for="email">Organisation</label>
-              <input id="email" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
+              <label for="form-settings-organisation">Organisation</label>
+              <input id="form-settings-organisation" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
 
-              <label for="email">Email address</label>
-              <input id="email" class="pure-input-1" type="email" placeholder="Enter an email address">
+              <label for="form-settings-email">Email address</label>
+              <input id="form-settings-email" class="pure-input-1" type="email" placeholder="Enter an email address">
             
             </fieldset>
 
@@ -264,11 +264,11 @@
               
               <legend id="anchor-register">Password</legend>
 
-              <label for="email">Password</label>
-              <input id="email" class="pure-input-1" type="password" placeholder="Enter a password">
+              <label for="form-settings-password">Password</label>
+              <input id="form-settings-password" class="pure-input-1" type="password" placeholder="Enter a password">
 
-              <label for="email">Confirm password</label>
-              <input id="email" class="pure-input-1" type="password" placeholder="Confirm your password">
+              <label for="form-settings-confirm">Confirm password</label>
+              <input id="form-settings-confirm" class="pure-input-1" type="password" placeholder="Confirm your password">
             
             </fieldset>
 
