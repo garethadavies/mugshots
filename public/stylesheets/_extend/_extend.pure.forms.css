@@ -44,6 +44,15 @@
 .pure-form textarea {
   border-radius: 3px;
 }
+/*------------------------------------*\
+  $ Labels
+\*------------------------------------*/
 .pure-form label {
   margin-top: 12px;
+}
+/*------------------------------------*\
+  $ Legends
+\*------------------------------------*/
+.pure-form legend {
+  padding-top: 0;
 }

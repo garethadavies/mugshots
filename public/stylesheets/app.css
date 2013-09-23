@@ -87,3 +87,16 @@ img {
 .menu-bar {
   margin: 0 0 24px 0;
 }
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+@media (min-width: 767px) {
+  /*------------------------------------*\
+  	  $ Scaffolding
+  	\*------------------------------------*/
+  .inner-page-header {
+    /* Bring the mug image in line with the inner-wrapper */
+  
+    left: -24px;
+  }
+}

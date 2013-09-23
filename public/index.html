@@ -63,7 +63,7 @@
 
               <fieldset>
 
-                <p class="no-margin-top">Log in to edit your organisation's drinks roster.</p>
+                <p>Log in to edit your organisation's drinks roster.</p>
                 
                 <legend><i class="icon-lock"></i> Log In</legend>
 
@@ -101,7 +101,7 @@
                 
                 <legend><i class="icon-pencil"></i> Register</legend>
 
-                <p class="no-margin-top">Register your organisation and start your own drinks roster.</p>
+                <p>Register your organisation and start your own drinks roster.</p>
 
                 <label for="email">Organisation</label>
                 <input id="email" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
@@ -143,15 +143,15 @@
 
         <button class="pure-button pure-button-custom right"><i class="icon-cog"></i> Settings</button> 
 
-        <button class="pure-button pure-button-custom right"><i class="icon-user-add"></i> Add</button>
+        <button id="mugshot-add-button" class="pure-button pure-button-custom right"><i class="icon-user-add"></i> Add</button>
 
       </div>
     
     </section>
 
-		<!-- New mugshot -->
+		<!-- Add a mugshot -->
 
-    <section class="item">
+    <section id="mugshot-add-container" class="item hide">
 
       <form class="pure-form pure-form-stacked">
 
@@ -218,7 +218,7 @@
 
         <div class="form-footer">
 
-					<button type="clear" class="pure-button pure-button-custom">Clear</button>
+					<button type="button" id="mugshot-cancel-button" class="pure-button pure-button-custom">Cancel</button>
 
 					<button type="submit" class="pure-button pure-button-custom">Submit</button>
 
@@ -283,7 +283,24 @@
 
   	$(function() {
 
+      /*
+      Fittext Initialisation
+      */
+
 		  $('#page-header-text').fitText(0.85);
+
+      /*
+      Add mugshot form
+      */
+
+      $('#mugshot-add-button, #mugshot-cancel-button').on('click', function() {
+
+        // Either open or close the form container
+        $('#mugshot-add-container').toggle();
+
+        e.preventDefault();
+
+      });
 
   	});
 
