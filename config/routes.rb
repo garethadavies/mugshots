@@ -1,5 +1,5 @@
 Mugshots::Application.routes.draw do
-  root :to => 'application#index'
+  root to: 'application#index'
 end
 #Mugshots::Application.routes.draw do
   # The priority is based upon order of creation:
