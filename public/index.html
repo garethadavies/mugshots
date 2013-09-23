@@ -146,7 +146,7 @@
 
       <div class="button-group button-group-parent-aligned">
 
-        <button class="pure-button pure-button-custom"><i class="icon-cog"></i> Settings</button><button id="mugshot-add-button" class="pure-button pure-button-custom"><i class="icon-user-add"></i> Add</button>
+        <button id="organisation-settings-button" class="pure-button pure-button-custom"><i class="icon-cog"></i> Settings</button><button id="mugshot-add-button" class="pure-button pure-button-custom"><i class="icon-user-add"></i> Add</button>
 
       </div>
     
@@ -181,7 +181,7 @@
 
           <div class="pure-u-1-2 extra-padding">
 
-            <fieldset class="pure-group">
+            <fieldset>
               
               <legend>Drink Preferences</legend>
 
@@ -231,6 +231,60 @@
 
     </section>
 
+    <!-- Organisation setting -->
+
+    <section id="organisation-settings-container" class="item hide">
+
+      <form class="pure-form pure-form-stacked">
+
+        <div class="pure-g-r">
+
+          <div class="pure-u-1-2 extra-padding">
+
+            <fieldset>
+              
+              <legend id="anchor-register">Organisation settings</legend>
+
+              <label for="email">Organisation</label>
+              <input id="email" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
+
+              <label for="email">Email address</label>
+              <input id="email" class="pure-input-1" type="email" placeholder="Enter an email address">
+            
+            </fieldset>
+
+          </div>
+
+          <div class="pure-u-1-2 extra-padding">
+
+            <fieldset>
+              
+              <legend id="anchor-register">Password</legend>
+
+              <label for="email">Password</label>
+              <input id="email" class="pure-input-1" type="password" placeholder="Enter a password">
+
+              <label for="email">Confirm password</label>
+              <input id="email" class="pure-input-1" type="password" placeholder="Confirm your password">
+            
+            </fieldset>
+
+          </div>
+
+        </div>
+
+        <div class="form-footer">
+
+          <button type="button" id="organisation-cancel-button" class="pure-button pure-button-custom">Cancel</button>
+
+          <button type="submit" class="pure-button pure-button-custom">Submit</button>
+
+        </div>
+
+      </form>
+
+    </section>
+
 		<!-- mugshot -->
 
     <section class="item mugshot clearfix">
@@ -269,7 +323,7 @@
 
       <footer class="form-footer clearfix">
 
-				<button type="button" class="pure-button pure-button-custom"><i class="icon-pencil"></i> Edit</button>
+				<button type="button" class="pure-button pure-button-custom mugshot-edit-button"><i class="icon-pencil"></i> Edit</button>
 
 				<button type="button" class="pure-button pure-button-custom"><i class="icon-trash"></i>Remove</button>
 
@@ -295,13 +349,26 @@
 		  $('#page-header-text').fitText(0.85);
 
       /*
-      Add mugshot form
+      Mugshot form toggle
       */
 
-      $('#mugshot-add-button, #mugshot-cancel-button').on('click', function(e) {
+      $('#mugshot-add-button, #mugshot-cancel-button, .mugshot-edit-button').on('click', function(e) {
 
         // Either open or close the form container
         $('#mugshot-add-container').toggle();
+
+        e.preventDefault();
+
+      });
+
+      /*
+      Settings form toggle
+      */
+
+      $('#organisation-settings-button, #organisation-cancel-button').on('click', function(e) {
+
+        // Either open or close the settings container
+        $('#organisation-settings-container').toggle();
 
         e.preventDefault();
 
