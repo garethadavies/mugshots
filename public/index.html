@@ -269,9 +269,9 @@
 
       <footer class="form-footer clearfix">
 
-				<button type="button" class="pure-button pure-button-custom">Edit</button>
+				<button type="button" class="pure-button pure-button-custom"><i class="icon-pencil"></i> Edit</button>
 
-				<button type="button" class="pure-button pure-button-custom">Remove</button>
+				<button type="button" class="pure-button pure-button-custom"><i class="icon-trash"></i>Remove</button>
 
       </footer>
 
@@ -286,6 +286,8 @@
 
   	$(function() {
 
+      console.log('Made by @garethadavies');
+
       /*
       Fittext Initialisation
       */
@@ -296,7 +298,7 @@
       Add mugshot form
       */
 
-      $('#mugshot-add-button, #mugshot-cancel-button').on('click', function() {
+      $('#mugshot-add-button, #mugshot-cancel-button').on('click', function(e) {
 
         // Either open or close the form container
         $('#mugshot-add-container').toggle();
