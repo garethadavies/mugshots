@@ -354,6 +354,14 @@
 
       $('#mugshot-add-button, #mugshot-cancel-button, .mugshot-edit-button').on('click', function(e) {
 
+        //
+        if ($('#organisation-settings-container').is(':visible')) {
+
+          // Either open or close the settings container
+          $('#organisation-settings-container').toggle();
+
+        }
+
         // Either open or close the form container
         $('#mugshot-add-container').toggle();
 
@@ -366,6 +374,14 @@
       */
 
       $('#organisation-settings-button, #organisation-cancel-button').on('click', function(e) {
+
+        //
+        if ($('#mugshot-add-container').is(':visible')) {
+
+          // Either open or close the form container
+          $('#mugshot-add-container').toggle();
+
+        }
 
         // Either open or close the settings container
         $('#organisation-settings-container').toggle();
