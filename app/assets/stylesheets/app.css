@@ -1,0 +1,102 @@
+/*------------------------------------*\
+  $$ Mugshots
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+/*
+ * CONTENTS
+ * Imports
+ * Global Reset & Standards
+ * Scaffolding
+ * Headers
+ * Menu bar
+ */
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  $$ Mugshots - Variables
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+/*
+ * CONTENTS
+ * Padding
+ * Colours
+ * Borders
+ * Fonts
+ */
+/*------------------------------------*\
+  $ Padding
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Colours
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Borders
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Fonts
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Global Reset & Standards
+\*------------------------------------*/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*------------------------------------*\
+  $ Scaffolding
+\*------------------------------------*/
+body {
+  background: #aedbe4;
+  /* #E0C598 */
+
+}
+.page-header {
+  overflow: hidden;
+}
+.inner-page-header {
+  margin: 0 auto;
+  position: relative;
+  /* Bring the mug image in line with the inner-wrapper */
+
+  left: -10px;
+  max-width: 800px;
+}
+.inner-wrapper {
+  padding: 0 18px;
+  margin: 0 auto;
+  max-width: 730px;
+}
+img {
+  width: 100%;
+}
+/*------------------------------------*\
+  $ Headers
+\*------------------------------------*/
+.content-header {
+  min-height: 60px;
+  /*background-color: #ddd;*/
+
+}
+/*------------------------------------*\
+  $ Menu Bar
+\*------------------------------------*/
+.menu-bar {
+  margin: 0 0 24px 0;
+}
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+@media (min-width: 767px) {
+  /*------------------------------------*\
+  	  $ Scaffolding
+  	\*------------------------------------*/
+  .inner-page-header {
+    /* Bring the mug image in line with the inner-wrapper */
+  
+    left: -24px;
+  }
+}

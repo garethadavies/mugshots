@@ -1,0 +1,53 @@
+/*------------------------------------*\
+  $$ Mugshots
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+/*
+ * CONTENTS
+ * Imports
+ */
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  $$ Mugshots - Variables
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+/*
+ * CONTENTS
+ * Padding
+ * Colours
+ * Borders
+ * Fonts
+ */
+/*------------------------------------*\
+  $ Padding
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Colours
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Borders
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Fonts
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Forms
+\*------------------------------------*/
+.form-footer {
+  padding: 12px 18px;
+  border-top: 1px solid #cccccc;
+  text-align: right;
+  background-color: #f9f9f9;
+  border-radius: 0 0 3px 3px;
+}
+.form-footer button {
+  margin: 0 !important;
+}
+.form-footer button[type="clear"],
+.form-footer button[type="button"] {
+  border-left: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}

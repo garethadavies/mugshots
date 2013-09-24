@@ -1,0 +1,97 @@
+/*------------------------------------*\
+  $$ Mugshots
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+/*
+ * CONTENTS 
+ * Imports
+ * Clearfix
+ * Helper classes
+ */
+/*------------------------------------*\
+  $ Imports
+\*------------------------------------*/
+/*------------------------------------*\
+  $$ Mugshots - Variables
+  Author: Gareth Davies @garethadavies
+\*------------------------------------*/
+/*
+ * CONTENTS
+ * Padding
+ * Colours
+ * Borders
+ * Fonts
+ */
+/*------------------------------------*\
+  $ Padding
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Colours
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Borders
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Fonts
+\*------------------------------------*/
+/*------------------------------------*\
+  $ Clearfix
+\*------------------------------------*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*------------------------------------*\
+  $ Helper classes
+\*------------------------------------*/
+.padding {
+  padding: 12px;
+}
+.extra-padding {
+  padding: 18px;
+}
+.padding-left {
+  padding-left: 12px;
+}
+.padding-right {
+  padding-right: 12px;
+}
+.margin {
+  margin: 12px;
+}
+.margin-left {
+  margin-left: 12px;
+}
+.margin-right {
+  margin-right: 12px;
+}
+.no-margin {
+  margin: 0;
+}
+.no-margin-top {
+  margin-top: 0;
+}
+.full-width {
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+/*------------------------------------*\
+  $ Media Queries
+\*------------------------------------*/
+@media (min-width: 767px) {
+  /*------------------------------------*\
+  	  $ Helper classes
+  	\*------------------------------------*/
+  .left {
+    float: left;
+  }
+  .right {
+    float: right;
+  }
+}
