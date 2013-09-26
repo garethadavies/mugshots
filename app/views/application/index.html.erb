@@ -1,291 +1,83 @@
-<div class="inner-wrapper" role="main">
+<!-- Login & Register -->
 
-    <!-- Login & Register -->
+<div class="pure-g-r">
 
-		<div class="pure-g-r">
+  <div class="pure-u-1-2">
 
-      <div class="pure-u-1-2">
+    <section class="item item-left">
 
-        <section class="item item-left">
+      <form id="form-login" class="pure-form pure-form-stacked">
 
-          <form id="form-login" class="pure-form pure-form-stacked">
+        <div class="extra-padding">
 
-            <div class="extra-padding">
+          <fieldset>
 
-              <fieldset>
+            <legend><i class="icon-lock"></i> Log In</legend>
 
-                <legend><i class="icon-lock"></i> Log In</legend>
+            <p>Log in to edit your organisation's drinks roster<span class="pure-hidden-desktop pure-hidden-tablet"> or <a href="#anchor-register">register</a></span>.</p>
 
-                <p>Log in to edit your organisation's drinks roster<span class="pure-hidden-desktop pure-hidden-tablet"> or <a href="#anchor-register">register</a></span>.</p>
+            <label for="form-login-email">Email address</label>
+            <input id="form-login-email" class="pure-input-1" type="email" placeholder="Enter your email address">
 
-                <label for="form-login-email">Email address</label>
-                <input id="form-login-email" class="pure-input-1" type="email" placeholder="Enter your email address">
-
-                <label for="form-login-password">Password</label>
-                <input id="form-login-password" class="pure-input-1" type="password" placeholder="Enter your password">
-              
-              </fieldset>
-
-            </div>
-
-            <div class="form-footer">
-
-              <button type="submit" class="pure-button pure-button-custom full-width">Log In <i class="icon-right-open"></i></button>
-
-            </div>
-
-          </form>
-
-        </section>
-
-      </div>
-
-      <div class="pure-u-1-2">
-
-        <section class="item item-right">
-
-          <form id="form-register" class="pure-form pure-form-stacked">
-
-            <div class="extra-padding">
-
-              <fieldset>
-                
-                <legend id="anchor-register"><i class="icon-pencil"></i> Register</legend>
-
-                <p>Register your organisation and start your own drinks roster.</p>
-
-                <label for="form-register-organisation">Organisation</label>
-                <input id="form-register-organisation" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
-
-                <label for="form-register-email">Email address</label>
-                <input id="form-register-email" class="pure-input-1" type="email" placeholder="Enter an email address">
-
-                <label for="form-register-password">Password</label>
-                <input id="form-register-password" class="pure-input-1" type="password" placeholder="Enter a password">
-
-                <label for="form-register-confirm">Confirm password</label>
-                <input id="form-register-confirm" class="pure-input-1" type="password" placeholder="Confirm your password">
-              
-              </fieldset>
-
-            </div>
-
-            <div class="form-footer">
-
-              <button type="submit" class="pure-button pure-button-custom full-width">Register <i class="icon-right-open"></i></button>
-
-            </div>
-
-          </form>
-
-        </section>
-
-      </div>
-
-    </div>
-
-    <!-- Menu bar -->
-  
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <section class="menu-bar clearfix">
-
-      <p class="no-margin-top">Welcome to the <b>Just Checking</b> Mugshots!</p>
-
-      <div class="button-group button-group-parent-aligned">
-
-        <button id="organisation-settings-button" class="pure-button pure-button-custom"><i class="icon-cog"></i> Settings</button><button id="mugshot-add-button" class="pure-button pure-button-custom"><i class="icon-user-add"></i> Add</button>
-
-      </div>
-    
-    </section>
-
-		<!-- Add a mugshot -->
-
-    <section id="mugshot-add-container" class="item hide">
-
-      <form id="form-add" class="pure-form pure-form-stacked">
-
-        <div class="pure-g-r">
-
-          <div class="pure-u-1-2 extra-padding">
-
-            <fieldset>
-              
-              <legend>Personal Details</legend>
-
-              <label for="form-add-firstname">First name</label>
-              <input id="form-add-firstname" class="pure-input-1" type="text" maxlength="50" placeholder="First name">
-
-              <label for="form-add-surname">Surname</label>
-              <input id="form-add-surname" class="pure-input-1" type="text" maxlength="50" placeholder="Surname">
-
-              <label for="form-add-email">Email Address</label>
-              <input id="form-add-email" class="pure-input-1" type="email" maxlength="100" placeholder="Email Address">
-
-              <label for="form-add-picture">Mugshot (.jpg, .gif or .png)</label>
-              <input id="form-add-picture" class="pure-input-1" type="file">
-            
-            </fieldset>
-
-          </div>
-
-          <div class="pure-u-1-2 extra-padding">
-
-            <fieldset>
-              
-              <legend>Drink Preferences</legend>
-
-              <label for="form-add-drink">Drink of choice</label>
-              <select name="drink" id="form-add-drink" class="pure-input-1">
-                <option value="1">Tea</option>
-                <option value="2">Coffee</option>
-                <option value="3">Water</option>
-              </select>
-
-              <label for="form-add-sugars">Number of sugars</label>
-              <select name="sugars" id="form-add-sugars" class="pure-input-1">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-
-              <label for="form-add-milk">Milk type</label>
-              <select name="milk" id="form-add-milk" class="pure-input-1">
-                <option value="0">Full-fat</option>
-                <option value="1">Semi-skimmed</option>
-                <option value="2">Skimmed</option>
-                <option value="3">1%</option>
-              </select>
-
-              <label for="form-add-preferences">Other preferences</label>
-              <textarea name="preferences" id="form-add-preferences" cols="30" rows="6" class="pure-input-1"></textarea>
-            
-            </fieldset>
-
-          </div>
+            <label for="form-login-password">Password</label>
+            <input id="form-login-password" class="pure-input-1" type="password" placeholder="Enter your password">
+          
+          </fieldset>
 
         </div>
 
         <div class="form-footer">
 
-					<button type="button" id="mugshot-cancel-button" class="pure-button pure-button-custom">Cancel</button>
-
-					<button type="submit" class="pure-button pure-button-custom">Submit</button>
+          <button type="submit" class="pure-button pure-button-custom full-width">Log In <i class="icon-right-open"></i></button>
 
         </div>
 
       </form>
-
-    </section>
-
-    <!-- Organisation setting -->
-
-    <section id="organisation-settings-container" class="item hide">
-
-      <form id="form-settings" class="pure-form pure-form-stacked">
-
-        <div class="pure-g-r">
-
-          <div class="pure-u-1-2 extra-padding">
-
-            <fieldset>
-              
-              <legend>Organisation settings</legend>
-
-              <label for="form-settings-organisation">Organisation</label>
-              <input id="form-settings-organisation" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
-
-              <label for="form-settings-email">Email address</label>
-              <input id="form-settings-email" class="pure-input-1" type="email" placeholder="Enter an email address">
-            
-            </fieldset>
-
-          </div>
-
-          <div class="pure-u-1-2 extra-padding">
-
-            <fieldset>
-              
-              <legend>Password</legend>
-
-              <label for="form-settings-password">Current password</label>
-              <input id="form-settings-password" class="pure-input-1" type="password" placeholder="Enter the current password">
-
-              <label for="form-settings-new">New password</label>
-              <input id="form-settings-new" class="pure-input-1" type="password" placeholder="Enter a new password">
-
-              <label for="form-settings-confirm">Confirm new password</label>
-              <input id="form-settings-confirm" class="pure-input-1" type="password" placeholder="Confirm your new password">
-            
-            </fieldset>
-
-          </div>
-
-        </div>
-
-        <div class="form-footer">
-
-          <button type="button" id="organisation-cancel-button" class="pure-button pure-button-custom">Cancel</button>
-
-          <button type="submit" class="pure-button pure-button-custom">Submit</button>
-
-        </div>
-
-      </form>
-
-    </section>
-
-		<!-- mugshot -->
-
-    <section class="item mugshot clearfix">
-
-    	<div class="extra-padding">
-
-				<header>
-
-	        <span class="bold">Gareth Davies</span>
-
-	      </header>
-
-	      <div class="pure-g">
-
-	        <div class="pure-u-1-4">
-
-	          <img src="images/default-mug.png">
-
-	        </div>
-
-	        <div class="pure-u-3-4 padding-left">
-
-	          <ul class="no-styling-list">
-	            <li><span class="bold">Tipple:</span> Coffee</li>
-	            <li><span class="bold">Milk:</span> Semi-skimmed</li>
-	            <li><span class="bold">Sugar:</span> 0</li>
-	          </ul>
-
-	          <p>Some notes here about the drink they have and any special requirements.</p>
-
-	        </div>
-
-	      </div>
-
-      </div>
-
-      <footer class="form-footer clearfix">
-
-				<button type="button" class="pure-button pure-button-custom mugshot-edit-button"><i class="icon-pencil"></i> Edit</button>
-
-				<button type="button" class="pure-button pure-button-custom"><i class="icon-trash"></i>Remove</button>
-
-      </footer>
 
     </section>
 
   </div>
+
+  <div class="pure-u-1-2">
+
+    <section class="item item-right">
+
+      <form id="form-register" class="pure-form pure-form-stacked">
+
+        <div class="extra-padding">
+
+          <fieldset>
+            
+            <legend id="anchor-register"><i class="icon-pencil"></i> Register</legend>
+
+            <p>Register your organisation and start your own drinks roster.</p>
+
+            <label for="form-register-organisation">Organisation</label>
+            <input id="form-register-organisation" class="pure-input-1" type="email" placeholder="Enter your organisation's name">
+
+            <label for="form-register-email">Email address</label>
+            <input id="form-register-email" class="pure-input-1" type="email" placeholder="Enter an email address">
+
+            <label for="form-register-password">Password</label>
+            <input id="form-register-password" class="pure-input-1" type="password" placeholder="Enter a password">
+
+            <label for="form-register-confirm">Confirm password</label>
+            <input id="form-register-confirm" class="pure-input-1" type="password" placeholder="Confirm your password">
+          
+          </fieldset>
+
+        </div>
+
+        <div class="form-footer">
+
+          <button type="submit" class="pure-button pure-button-custom full-width">Register <i class="icon-right-open"></i></button>
+
+        </div>
+
+      </form>
+
+    </section>
+
+  </div>
+
+</div>

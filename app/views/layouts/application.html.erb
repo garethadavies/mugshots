@@ -33,7 +33,9 @@
 
         <div class="pure-u-2-5">
 
-          <img src="images/mug-blue.png">
+          <%= image_tag "images/mug-blue.png" %>
+
+          <!-- <img src="images/mug-blue.png"> -->
 
         </div>
 
@@ -51,7 +53,11 @@
 
   </header>
 
+  <div class="inner-wrapper" role="main">
+
   <%= yield %>
+
+  </div>
 
 </body>
 </html>

@@ -1,7 +1,11 @@
 Mugshots::Application.routes.draw do
+  
+  root to: 'application#index'
+
+  resources :organisations
+
   get "organisation/index"
 
-  root to: 'application#index'
 end
 #Mugshots::Application.routes.draw do
 
