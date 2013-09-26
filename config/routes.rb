@@ -1,7 +1,10 @@
 Mugshots::Application.routes.draw do
+  get "organisation/index"
+
   root to: 'application#index'
 end
 #Mugshots::Application.routes.draw do
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
